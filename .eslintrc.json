@@ -1,11 +1,12 @@
 {
   "extends": [
-    "next/core-web-vitals", 
+    "next/core-web-vitals",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
   "rules": {
     "indent": ["error", 2],
+    "quotes": ["error", "single"],
     "react/button-has-type": "error"
   }
 }
