@@ -10,3 +10,12 @@ export const client = contentful.createClient({
 //   .getEntry('23ajyJGN6FZHErhMhAjYLu')
 //   .then((entry: any) => console.log(entry))
 //   .catch(console.error)
+
+// sample code for SSR
+// export async function getData() {
+//   const data = await client
+//     .getEntry('23ajyJGN6FZHErhMhAjYLu')
+//     .then((entry: any) => entry)
+//     .catch(console.error)
+//   return data
+// }
