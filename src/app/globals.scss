@@ -16,8 +16,8 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   margin: auto;
+  background-color: white;
 }
 
 a {
@@ -32,4 +32,8 @@ input {
   align-items: center;
   border: none;
   font-family: inherit;
+}
+
+button {
+  cursor: pointer;
 }

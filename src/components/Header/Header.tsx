@@ -1,18 +1,29 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import styles from './Header.module.sass'
 import Link from 'next/link'
 import CartIcon from '@/svgs/CartIcon'
 import MenuIcon from '@/svgs/MenuIcon'
+import Sidebar from './Sidebar'
 
 const NAV_LINKS = ['Home', 'Headphones', 'Speakers', 'Earphones']
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleMenuClick = () => {
+    setIsMenuOpen((prev) => !prev)
+  }
+
   return (
     <header className={styles.header}>
+      {isMenuOpen && <Sidebar setIsMenuOpen={setIsMenuOpen} />}
       <button
-        type="submit"
+        type="button"
         aria-label="display navigation links"
         className={styles.menuButton}
+        onClick={handleMenuClick}
       >
         <MenuIcon />
       </button>
@@ -23,7 +34,9 @@ const Header = () => {
         <ul>
           {NAV_LINKS.map((link) => (
             <li key={link}>
-              <Link href={`/${link.toLowerCase()}`}>{link}</Link>
+              <Link href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import './globals.scss'
-import Header from '@/components/Header'
+import Header from '@/components/Header/Header'
 
 const inter = Manrope({ subsets: ['latin'] })
 
