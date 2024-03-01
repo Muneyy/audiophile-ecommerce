@@ -23,7 +23,6 @@ const Footer = () => {
           <Image
             src={FooterImage}
             alt="A man listening to music wearing headphones."
-            objectFit="contain"
           />
         </div>
         <div className={styles.textContainer}>
