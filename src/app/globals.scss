@@ -1,0 +1,40 @@
+:root {
+  --max-width: 1440px;
+  --background: #191919;
+  --gray: #afafaf;
+  --light-gray: #828282;
+  --gray-text: #868686;
+  --orange: #d87c49;
+  --gray-bg: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  margin: auto;
+  background-color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

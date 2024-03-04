@@ -5,8 +5,3 @@ export const client = contentful.createClient({
   environment: 'master', // defaults to 'master' if not set
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 })
-
-// client
-//   .getEntry('23ajyJGN6FZHErhMhAjYLu')
-//   .then((entry: any) => console.log(entry))
-//   .catch(console.error)
