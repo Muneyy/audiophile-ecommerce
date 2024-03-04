@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './Sidebar.module.sass'
 import CloseIcon from '@/svgs/CloseIcon'
-import Link from 'next/link'
-
-const NAV_LINKS = ['Home', 'Headphones', 'Speakers', 'Earphones']
+import NavLinks from '../NavLinks'
 
 const Sidebar = ({
   setIsMenuOpen,
@@ -46,15 +44,7 @@ const Sidebar = ({
         >
           <CloseIcon />
         </button>
-        <ul>
-          {NAV_LINKS.map((link) => (
-            <li key={link}>
-              <Link href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}>
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <NavLinks />
       </aside>
     </>
   )

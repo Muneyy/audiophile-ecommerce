@@ -6,8 +6,7 @@ import Link from 'next/link'
 import CartIcon from '@/svgs/CartIcon'
 import MenuIcon from '@/svgs/MenuIcon'
 import Sidebar from './Sidebar'
-
-const NAV_LINKS = ['Home', 'Headphones', 'Speakers', 'Earphones']
+import NavLinks from '../NavLinks'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,15 +30,7 @@ const Header = () => {
         <span className={styles.logo}>audiophile</span>
       </Link>
       <nav className={styles.desktopNavLinks}>
-        <ul>
-          {NAV_LINKS.map((link) => (
-            <li key={link}>
-              <Link href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}>
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <NavLinks />
       </nav>
       <button type="button" aria-label="open cart display">
         <CartIcon />
