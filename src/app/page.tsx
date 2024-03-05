@@ -37,6 +37,10 @@ import Image from 'next/image'
 import RightArrow from '@/svgs/RightArrow'
 const CATEGORIES_LIST = ['Headphones', 'Speakers', 'Earphones']
 
+const FEATURED_TITLE = 'ZX9 SPEAKER'
+const FEATURED_DESC =
+  'Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.'
+
 export default async function Home() {
   const dynamicBackgroundImageStyle = () => {
     // dynamically change url of background-image of hero banner
@@ -96,6 +100,29 @@ export default async function Home() {
             </button>
           </div>
         ))}
+      </section>
+      <section className={styles.sectionFeatured}>
+        <div className={styles.cardOne}>
+          <div className={styles.imageContainer}>
+            <Image
+              src={categorySpeakers}
+              alt="featured product"
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </div>
+          <div className={styles.textContainer}>
+            <h2>{FEATURED_TITLE}</h2>
+            <p>{FEATURED_DESC}</p>
+            <button
+              type="button"
+              aria-label={`go to ${FEATURED_TITLE} product page`}
+            >
+              See Product
+            </button>
+          </div>
+        </div>
       </section>
     </main>
   )
