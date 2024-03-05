@@ -1,8 +1,5 @@
 // import fetchGql from '@/lib/fetchGql'
 // import { notFound } from 'next/navigation'
-import styles from './page.module.sass'
-import bgDesktop from '@/assets/image-hero.jpg'
-import bgMobile from '@/assets/image-header.jpg'
 
 // async function getData() {
 //   const query = `
@@ -25,10 +22,20 @@ import bgMobile from '@/assets/image-header.jpg'
 //   }
 // }
 
+import styles from './page.module.sass'
+import bgDesktop from '@/assets/image-hero.jpg'
+import bgMobile from '@/assets/image-header.jpg'
 const BANNER_SPAN = 'New Product'
 const BANNER_TITLE = 'XX99 Mark II Headphones'
 const BANNER_DESC =
   'Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.'
+
+import categoryEarphones from '@/assets/categories-earphones.png'
+import categoryHeadphones from '@/assets/categories-headphones.png'
+import categorySpeakers from '@/assets/categories-speakers.png'
+import Image from 'next/image'
+import RightArrow from '@/svgs/RightArrow'
+const CATEGORIES_LIST = ['Headphones', 'Speakers', 'Earphones']
 
 export default async function Home() {
   const dynamicBackgroundImageStyle = () => {
@@ -60,6 +67,35 @@ export default async function Home() {
         <button type="button" aria-label={`go to ${BANNER_TITLE} product page`}>
           SEE PRODUCT
         </button>
+      </section>
+      <section className={styles.sectionCategories}>
+        {CATEGORIES_LIST.map((category) => (
+          <div className={styles.categoryCard} key={category}>
+            <div className={styles.imageContainer}>
+              <Image
+                src={
+                  category === 'Headphones'
+                    ? categoryHeadphones.src
+                    : category === 'Speakers'
+                      ? categorySpeakers.src
+                      : categoryEarphones.src
+                }
+                alt={`${category} category`}
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
+            <h2>{category}</h2>
+            <button
+              type="button"
+              aria-label={`go to ${category} category page`}
+            >
+              SHOP
+              <RightArrow />
+            </button>
+          </div>
+        ))}
       </section>
     </main>
   )
