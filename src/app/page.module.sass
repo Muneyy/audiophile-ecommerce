@@ -1,5 +1,17 @@
 .main
     color: white
+    button
+        display: flex
+        justify-content: center
+        font-weight: 700
+        letter-spacing: 0.15rem
+        width: 200px
+        height: 50px
+        cursor: pointer
+        border: none
+        text-transform: uppercase
+        &:hover
+            filter: brightness(0.9)
 
 .sectionBanner
     height: 500px
@@ -25,19 +37,9 @@
         color: var(--gray)
         max-width: 350px
     > button
-        display: flex
-        justify-content: center
-        font-weight: 700
-        letter-spacing: 0.15rem
-        width: 200px
-        height: 50px
-        margin-top: 20px
         background-color: var(--orange)
+        margin-top: 20px
         color: white
-        border: none
-        cursor: pointer
-        &:hover
-            filter: brightness(0.9)
     @media screen and ( min-width: 1200px )
         align-items: flex-start
         text-align: left
@@ -66,7 +68,7 @@
         padding-bottom: 20px
         gap: 10px
         width: 300px
-        height: 170px
+        height: 200px
         background-color: var(--gray-bg)
         border-radius: 10px
         color: black
@@ -98,12 +100,12 @@
     @media screen and (min-width: 768px)
         flex-direction: row
         justify-content: center
-        margin-left: 40px
-        margin-right: 40px
+        margin: 0 auto
         margin-top: 100px
+        width: 90%
         gap: 5px
         .categoryCard
-            width: 350px
+            width: 100%
             height: 180px
             > h2
                 font-size: 1rem
@@ -116,4 +118,61 @@
                 .imageContainer
                     top: -83px
                     height: auto
+
+.sectionFeatured
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 30px
+    .cardOne
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 300px
+        border-radius: 10px
+        background-color: var(--orange)
+        padding: 50px 20px
+        .textContainer
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            gap: 20px
+            > h2
+                font-size: 2.2rem
+                width: 70%
+            > p
+                opacity: 0.8
+        button
+            background-color: black
+            color: white
+        .imageContainer
+            width: 280px
+            > img
+                width: 100%
+                height: auto
+        @media screen and (min-width: 768px)
+            margin: 0 40px
+            width: 90%
+        @media screen and (min-width: 1200px)
+            display: grid
+            grid-template-columns: 55% 1fr
+            overflow: hidden
+            padding: 100px 50px
+            height: 500px
+            .imageContainer
+                width: 700px
+                position: relative
+                > img
+                    position: absolute
+                    top: -180px
+                    right: 30px
+            .textContainer
+                align-items: flex-start
+                text-align: left
+                > h2
+                    font-size: 2.5rem
+                > p
+                    width: 350px
+
         
