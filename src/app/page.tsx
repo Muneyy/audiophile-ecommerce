@@ -23,8 +23,8 @@
 // }
 
 import styles from './page.module.sass'
-import bgDesktop from '@/assets/image-hero.jpg'
-import bgMobile from '@/assets/image-header.jpg'
+import bgBannerDesktop from '@/assets/image-hero.jpg'
+import bgBannerMobile from '@/assets/image-header.jpg'
 const BANNER_SPAN = 'New Product'
 const BANNER_TITLE = 'XX99 Mark II Headphones'
 const BANNER_DESC =
@@ -41,19 +41,32 @@ const FEATURED_TITLE = 'ZX9 SPEAKER'
 const FEATURED_DESC =
   'Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.'
 
+import bgFeaturedTwoDesktop from '@/assets/zx7-desktop.jpg'
+import bgFeaturedTwoMobile from '@/assets/zx7-mobile.jpg'
+const FEATURED_TITLE_TWO = 'ZX7 Speaker'
+
 export default async function Home() {
-  const dynamicBackgroundImageStyle = () => {
+  const dynamicBackgroundImagesStyle = () => {
     // dynamically change url of background-image of hero banner
     // according to screen width
     return (
       <style scoped>
         {`
-      .image-handler {
-        background-image: url(${bgDesktop.src});
+      .banner-background {
+        background-image: url(${bgBannerDesktop.src});
+      }
+      .featured-two-bg {
+        background-image: url(${bgFeaturedTwoDesktop.src});
       }
       @media (max-width: 1200px) {
-        .image-handler {
-          background-image: url(${bgMobile.src});
+        .banner-background {
+          background-image: url(${bgBannerMobile.src});
+        }
+
+      }
+      @media (max-width: 768px) {
+        .featured-two-bg {
+          background-image: url(${bgFeaturedTwoMobile.src});
         }
       }
     `}
@@ -63,8 +76,8 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
-      {dynamicBackgroundImageStyle()}
-      <section className={`${styles.sectionBanner} image-handler`}>
+      {dynamicBackgroundImagesStyle()}
+      <section className={`${styles.sectionBanner} banner-background`}>
         <span>{BANNER_SPAN}</span>
         <h1>{BANNER_TITLE}</h1>
         <p>{BANNER_DESC}</p>
@@ -122,6 +135,15 @@ export default async function Home() {
               See Product
             </button>
           </div>
+        </div>
+        <div className={`${styles.cardTwo} featured-two-bg`}>
+          <h2>{FEATURED_TITLE_TWO}</h2>
+          <button
+            type="button"
+            aria-label={`go to ${FEATURED_TITLE_TWO} product page`}
+          >
+            See Product
+          </button>
         </div>
       </section>
     </main>

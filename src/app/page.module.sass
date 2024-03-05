@@ -40,6 +40,9 @@
         background-color: var(--orange)
         margin-top: 20px
         color: white
+    @media screen and (min-width: 768px)
+        > h1
+            font-size: 3.2rem
     @media screen and ( min-width: 1200px )
         align-items: flex-start
         text-align: left
@@ -49,7 +52,6 @@
         background-position: center
         > h1
             max-width: 500px
-            font-size: 3rem
         > p
             font-size: 1.1rem
             max-width: 400px
@@ -58,8 +60,10 @@
     display: flex
     flex-direction: column
     align-items: center
+    margin: 0 auto
     margin-top: 80px
     gap: 80px
+    max-width: 90%
     .categoryCard
         display: flex
         flex-direction: column
@@ -67,7 +71,7 @@
         justify-content: flex-end
         padding-bottom: 20px
         gap: 10px
-        width: 300px
+        width: 100%
         height: 200px
         background-color: var(--gray-bg)
         border-radius: 10px
@@ -100,9 +104,8 @@
     @media screen and (min-width: 768px)
         flex-direction: row
         justify-content: center
-        margin: 0 auto
         margin-top: 100px
-        width: 90%
+        width: 100%
         gap: 5px
         .categoryCard
             width: 100%
@@ -123,12 +126,14 @@
     display: flex
     flex-direction: column
     align-items: center
+    margin: 0 auto
     margin-top: 30px
+    width: 90%
     .cardOne
         display: flex
         flex-direction: column
         align-items: center
-        width: 300px
+        width: 100%
         border-radius: 10px
         background-color: var(--orange)
         padding: 50px 20px
@@ -153,7 +158,9 @@
                 height: auto
         @media screen and (min-width: 768px)
             margin: 0 40px
-            width: 90%
+            width: 100%
+            p
+                width: 50%
         @media screen and (min-width: 1200px)
             display: grid
             grid-template-columns: 55% 1fr
@@ -174,5 +181,28 @@
                     font-size: 2.5rem
                 > p
                     width: 350px
+    .cardTwo
+        display: flex
+        flex-direction: column
+        gap: 10px
+        width: 100%
+        height: 300px
+        margin-top: 30px
+        border-radius: 10px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        padding: 100px 0 0 40px
+        color: black
+        button 
+            width: 150px
+            border: 2px black solid
+            &:hover
+                background-color: black
+                color: white
+        @media screen and (min-width: 768px)
+            padding-left: 80px
+            margin: 30px auto
+            width: 100%
 
         
