@@ -45,6 +45,9 @@ import bgFeaturedTwoDesktop from '@/assets/zx7-desktop.jpg'
 import bgFeaturedTwoMobile from '@/assets/zx7-mobile.jpg'
 const FEATURED_TITLE_TWO = 'ZX7 Speaker'
 
+import bgCardThree from '@/assets/image-earphones-yx1.jpg'
+const FEATURED_TITLE_THREE = 'YX1 Earphones'
+
 export default async function Home() {
   const dynamicBackgroundImagesStyle = () => {
     // dynamically change url of background-image of hero banner
@@ -144,6 +147,26 @@ export default async function Home() {
           >
             See Product
           </button>
+        </div>
+        <div className={styles.cardThree}>
+          <div className={styles.imageContainer}>
+            <Image
+              src={bgCardThree}
+              alt="featured product"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+              }}
+            />
+          </div>
+          <div className={styles.textContainer}>
+            <h2>{FEATURED_TITLE_THREE}</h2>
+            <button type="button" aria-label="go to YX1 Earphones product page">
+              See Product
+            </button>
+          </div>
         </div>
       </section>
     </main>
