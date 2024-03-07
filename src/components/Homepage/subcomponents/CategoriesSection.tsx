@@ -7,6 +7,16 @@ import Image from 'next/image'
 import RightArrow from '@/svgs/RightArrow'
 const CATEGORIES_LIST = ['Headphones', 'Speakers', 'Earphones']
 
+type CategorySrc = {
+  [key: string]: string
+}
+
+const categorySrc: CategorySrc = {
+  Headphones: categoryHeadphones.src,
+  Speakers: categorySpeakers.src,
+  Earphones: categoryEarphones.src,
+}
+
 const CategoriesSection = () => {
   return (
     <section className={styles.sectionCategories}>
@@ -14,13 +24,7 @@ const CategoriesSection = () => {
         <div className={styles.categoryCard} key={category}>
           <div className={styles.imageContainer}>
             <Image
-              src={
-                category === 'Headphones'
-                  ? categoryHeadphones.src
-                  : category === 'Speakers'
-                    ? categorySpeakers.src
-                    : categoryEarphones.src
-              }
+              src={categorySrc[category]}
               alt={`${category} category`}
               width={0}
               height={0}
