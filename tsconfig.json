@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/lib/contentful.js"
-, "src/svgs/CirclesPattern.svh"  ],
+  ],
   "exclude": ["node_modules"]
 }
