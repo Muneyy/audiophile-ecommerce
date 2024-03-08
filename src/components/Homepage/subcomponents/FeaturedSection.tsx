@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import bgCardThree from '@/assets/image-earphones-yx1.jpg'
 import featuredSpeakers from '@/assets/image-speaker-zx9.png'
+import circlesPattern from '@/svgs/CirclesPattern.svg'
 
 const FEATURED_TITLE = 'ZX9 SPEAKER'
 const FEATURED_DESC =
@@ -15,7 +16,10 @@ const FEATURED_TITLE_THREE = 'YX1 Earphones'
 const FeaturedSection = () => {
   return (
     <section className={styles.sectionFeatured}>
-      <div className={styles.cardOne}>
+      <div
+        style={{ backgroundImage: `url(${circlesPattern.src})` }}
+        className={styles.cardOne}
+      >
         <div className={styles.imageContainer}>
           <Image
             src={featuredSpeakers}
