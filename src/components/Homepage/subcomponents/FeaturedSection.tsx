@@ -3,7 +3,7 @@ import styles from './FeaturedSection.module.sass'
 import Image from 'next/image'
 
 import bgCardThree from '@/assets/image-earphones-yx1.jpg'
-import categorySpeakers from '@/assets/categories-speakers.png'
+import featuredSpeakers from '@/assets/image-speaker-zx9.png'
 
 const FEATURED_TITLE = 'ZX9 SPEAKER'
 const FEATURED_DESC =
@@ -18,7 +18,7 @@ const FeaturedSection = () => {
       <div className={styles.cardOne}>
         <div className={styles.imageContainer}>
           <Image
-            src={categorySpeakers}
+            src={featuredSpeakers}
             alt="featured product"
             width={0}
             height={0}
