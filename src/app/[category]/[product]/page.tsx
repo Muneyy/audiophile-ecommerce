@@ -11,6 +11,7 @@ import imageRecommendation1 from '@/assets/recommendations/image-xx99-mark-one-h
 import imageRecommendation2 from '@/assets/recommendations/image-xx59-headphones.jpg'
 import imageRecommendation3 from '@/assets/recommendations/image-zx9-speaker.jpg'
 import CategoriesSection from '@/components/Homepage/subcomponents/CategoriesSection'
+import BackButton from '@/components/PDP/BackButton'
 
 const fetchedData = {
   title: 'XX99 Mark II Headphones',
@@ -69,14 +70,13 @@ const Page = () => {
     features,
     includedItems,
     imageProduct,
-    // imageGallery,
+    imageGallery,
+    imageRecommendations,
   } = fetchedData
 
   return (
     <main className={styles.main}>
-      <button type="button" aria-label="Go back to previous page">
-        Go back
-      </button>
+      <BackButton />
       <section className={styles.imageAndDescription}>
         <div className={styles.imageContainer}>
           <Image
@@ -125,7 +125,7 @@ const Page = () => {
       </section>
       <section className={styles.imageGallery}>
         <div className={styles.columnOne}>
-          {fetchedData.imageGallery.slice(0, 2).map((image, index) => (
+          {imageGallery.slice(0, 2).map((image, index) => (
             <div key={index} className={styles.imageGalleryContainer}>
               <Image
                 src={image}
@@ -140,7 +140,7 @@ const Page = () => {
         <div className={styles.columnTwo}>
           <div className={styles.imageGalleryContainer}>
             <Image
-              src={fetchedData.imageGallery[2]}
+              src={imageGallery[2]}
               alt={title}
               width={0}
               height={0}
@@ -152,7 +152,7 @@ const Page = () => {
       <section className={styles.recommendations}>
         <span>YOU MAY ALSO LIKE</span>
         <div className={styles.productList}>
-          {fetchedData.imageRecommendations.map((image, index) => (
+          {imageRecommendations.map((image, index) => (
             <div key={index} className={styles.imageContainer}>
               <Image
                 src={image.src}
