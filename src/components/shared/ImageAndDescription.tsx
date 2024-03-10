@@ -17,7 +17,7 @@ const ImageAndDescription = ({
   price: number
   forProductListPage?: boolean
   params?: {
-    countryCode: string
+    category: string
   }
 }) => {
   return (
@@ -37,7 +37,7 @@ const ImageAndDescription = ({
         <p>{description}</p>
         {forProductListPage ? (
           <div className={styles.utilsContainer}>
-            <Link href={`/${params?.countryCode}/${title}`}>
+            <Link href={`/${params?.category}/${title}`}>
               <button type="button" aria-label={`View ${title} details`}>
                 SEE PRODUCT
               </button>

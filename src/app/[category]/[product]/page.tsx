@@ -64,7 +64,13 @@ const fetchedData = {
   ],
 }
 
-const Page = () => {
+const Page = ({
+  params,
+}: {
+  params: {
+    category: string
+  }
+}) => {
   const {
     title,
     description,
@@ -90,6 +96,7 @@ const Page = () => {
       <Recommendations
         imageRecommendations={imageRecommendations}
         title={title}
+        params={params}
       />
     </main>
   )
