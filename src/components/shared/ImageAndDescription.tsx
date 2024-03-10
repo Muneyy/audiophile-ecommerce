@@ -1,17 +1,24 @@
 import React from 'react'
 import styles from './ImageAndDescription.module.sass'
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 
 const ImageAndDescription = ({
   imageProduct,
   title,
   description,
   price,
+  forProductListPage,
+  params,
 }: {
   imageProduct: StaticImageData
   title: string
   description: string
   price: number
+  forProductListPage?: boolean
+  params?: {
+    countryCode: string
+  }
 }) => {
   return (
     <section className={styles.imageAndDescription}>
@@ -28,21 +35,33 @@ const ImageAndDescription = ({
         <span className={styles.newProduct}>NEW PRODUCT</span>
         <h1>{title}</h1>
         <p>{description}</p>
-        <span className={styles.price}>${price}</span>
-        <div className={styles.utilsContainer}>
-          <div className={styles.quantity}>
-            <button type="button" aria-label="decrease quantity">
-              <span>-</span>
-            </button>
-            <span>1</span>
-            <button type="button" aria-label="increase quantity">
-              <span>+</span>
-            </button>
+        {forProductListPage ? (
+          <div className={styles.utilsContainer}>
+            <Link href={`/${params?.countryCode}/${title}`}>
+              <button type="button" aria-label={`View ${title} details`}>
+                SEE PRODUCT
+              </button>
+            </Link>
           </div>
-          <button type="button" aria-label={`Add ${title} to cart`}>
-            ADD TO CART
-          </button>
-        </div>
+        ) : (
+          <>
+            <span className={styles.price}>${price}</span>
+            <div className={styles.utilsContainer}>
+              <div className={styles.quantity}>
+                <button type="button" aria-label="decrease quantity">
+                  <span>-</span>
+                </button>
+                <span>1</span>
+                <button type="button" aria-label="increase quantity">
+                  <span>+</span>
+                </button>
+              </div>
+              <button type="button" aria-label={`Add ${title} to cart`}>
+                ADD TO CART
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </section>
   )
