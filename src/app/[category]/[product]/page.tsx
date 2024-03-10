@@ -7,6 +7,11 @@ import imageGallery1 from '@/assets/marktwoheadphones/image-gallery-1.jpg'
 import imageGallery2 from '@/assets/marktwoheadphones/image-gallery-2.jpg'
 import imageGallery3 from '@/assets/marktwoheadphones/image-gallery-3.jpg'
 
+import imageRecommendation1 from '@/assets/recommendations/image-xx99-mark-one-headphones.jpg'
+import imageRecommendation2 from '@/assets/recommendations/image-xx59-headphones.jpg'
+import imageRecommendation3 from '@/assets/recommendations/image-zx9-speaker.jpg'
+import CategoriesSection from '@/components/Homepage/subcomponents/CategoriesSection'
+
 const fetchedData = {
   title: 'XX99 Mark II Headphones',
   description:
@@ -40,6 +45,20 @@ const fetchedData = {
   },
   imageProduct,
   imageGallery: [imageGallery1, imageGallery2, imageGallery3],
+  imageRecommendations: [
+    {
+      title: 'XX99 Mark I',
+      src: imageRecommendation1,
+    },
+    {
+      title: 'XX59',
+      src: imageRecommendation2,
+    },
+    {
+      title: 'ZX9 Speaker',
+      src: imageRecommendation3,
+    },
+  ],
 }
 
 const Page = () => {
@@ -128,6 +147,29 @@ const Page = () => {
               sizes="100vw"
             />
           </div>
+        </div>
+      </section>
+      <section className={styles.recommendations}>
+        <span>YOU MAY ALSO LIKE</span>
+        <div className={styles.productList}>
+          {fetchedData.imageRecommendations.map((image, index) => (
+            <div key={index} className={styles.imageContainer}>
+              <Image
+                src={image.src}
+                alt={title}
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+              <h2>{image.title}</h2>
+              <button type="button" aria-label="View product details">
+                SEE PRODUCT
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className={styles.productList}>
+          <CategoriesSection />
         </div>
       </section>
     </main>
