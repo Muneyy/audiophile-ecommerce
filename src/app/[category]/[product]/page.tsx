@@ -24,7 +24,8 @@ const Page = ({
     features,
     includedItems,
     imageProduct,
-    // imageGallery,
+    imageGallery,
+    imageRecommendations,
   } = fetchedData
 
   return (
