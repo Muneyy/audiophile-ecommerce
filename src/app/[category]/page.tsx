@@ -41,6 +41,7 @@ const Page = ({ params }: { params: TCategory }) => {
             imageProduct={item.imageSrc}
             price={100}
             forProductListPage={true}
+            params={{ category: categoryTitle }}
           />
         ))}
       </div>

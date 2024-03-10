@@ -5,6 +5,7 @@ import categoryHeadphones from '@/assets/categories-headphones.png'
 import categorySpeakers from '@/assets/categories-speakers.png'
 import Image from 'next/image'
 import RightArrow from '@/svgs/RightArrow'
+import Link from 'next/link'
 const CATEGORIES_LIST = ['Headphones', 'Speakers', 'Earphones']
 
 type CategorySrc = {
@@ -32,10 +33,15 @@ const CategoriesSection = () => {
             />
           </div>
           <h2>{category}</h2>
-          <button type="button" aria-label={`go to ${category} category page`}>
-            SHOP
-            <RightArrow />
-          </button>
+          <Link href={`/${category}`}>
+            <button
+              type="button"
+              aria-label={`go to ${category} category page`}
+            >
+              SHOP
+              <RightArrow />
+            </button>
+          </Link>
         </div>
       ))}
     </section>
