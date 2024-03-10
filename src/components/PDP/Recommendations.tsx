@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Recommendations.module.sass'
 import Image, { StaticImageData } from 'next/image'
-import CategoriesSection from '../Homepage/subcomponents/CategoriesSection'
+import CategoriesSection from '../shared/CategoriesSection'
 
 const Recommendations = ({
   imageRecommendations,

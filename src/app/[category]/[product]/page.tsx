@@ -10,7 +10,7 @@ import imageRecommendation1 from '@/assets/recommendations/image-xx99-mark-one-h
 import imageRecommendation2 from '@/assets/recommendations/image-xx59-headphones.jpg'
 import imageRecommendation3 from '@/assets/recommendations/image-zx9-speaker.jpg'
 import BackButton from '@/components/PDP/BackButton'
-import ImageAndDescription from '@/components/PDP/ImageAndDescription'
+import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import FeaturesAndBox from '@/components/PDP/FeaturesAndBox'
 import ImageGallery from '@/components/PDP/ImageGallery'
 import Recommendations from '@/components/PDP/Recommendations'
