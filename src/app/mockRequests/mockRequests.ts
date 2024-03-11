@@ -55,3 +55,23 @@ export const fetchedDataForPDP = {
     },
   ],
 }
+
+import ImageSrc1 from '@/assets/speakers/zx9-speaker.jpg'
+import ImageSrc2 from '@/assets/speakers/zx7-speaker.jpg'
+
+export const fetchedDataForPLP = {
+  data: [
+    {
+      title: 'ZX9 Speakers',
+      description:
+        'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.',
+      imageSrc: ImageSrc1,
+    },
+    {
+      title: 'ZX7 Speakers',
+      description:
+        'Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.',
+      imageSrc: ImageSrc2,
+    },
+  ],
+}
