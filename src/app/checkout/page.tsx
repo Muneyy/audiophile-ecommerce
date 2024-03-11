@@ -6,13 +6,22 @@ import Summary from './Summary'
 
 const Page = () => {
   return (
-    <main className={styles.main}>
-      <BackButton />
-      <div className={styles.responsiveDivider}>
-        <Checkout />
-        <Summary />
-      </div>
-    </main>
+    <>
+      <style>
+        {`
+        html {
+          background-color: var(--gray-bg)
+        }
+        `}
+      </style>
+      <main className={styles.main}>
+        <BackButton />
+        <div className={styles.responsiveDivider}>
+          <Checkout />
+          <Summary />
+        </div>
+      </main>
+    </>
   )
 }
 
