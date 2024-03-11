@@ -6,6 +6,7 @@ import bgFeaturedTwoMobile from '@/assets/zx7-mobile.jpg'
 import BannerSection from './subcomponents/BannerSection'
 import CategoriesSection from './subcomponents/CategoriesSection'
 import FeaturedSection from './subcomponents/FeaturedSection'
+import styles from './Homepage.module.sass'
 
 const Homepage = () => {
   const dynamicBackgroundImagesStyle = () => {
@@ -36,12 +37,14 @@ const Homepage = () => {
     )
   }
   return (
-    <>
+    <main className={styles.main}>
       {dynamicBackgroundImagesStyle()}
       <BannerSection />
-      <CategoriesSection />
+      <div className={styles.categoriesWidth}>
+        <CategoriesSection />
+      </div>
       <FeaturedSection />
-    </>
+    </main>
   )
 }
 

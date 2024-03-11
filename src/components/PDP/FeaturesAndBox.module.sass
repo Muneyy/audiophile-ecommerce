@@ -1,0 +1,38 @@
+.featuresAndBox
+    display: grid
+    grid-template-columns: 65% 1fr
+    color: var(--gray-text)
+    h2
+        color: black
+        margin-bottom: 20px
+        font-size: 1.8rem
+        font-weight: 900
+    .features
+        padding-right: 150px
+        > p
+            font-weight: 550
+    .boxItem
+        display: grid
+        grid-template-columns: 10% 1fr
+        margin-top: 10px
+        font-weight: 550
+        .itemQuantity
+            font-weight: 700
+            color: var(--orange)
+    @media screen and ( max-width: 1100px )
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 90%
+        margin: 0 auto
+        .features
+            padding: 0
+        h2
+            margin-top: 30px
+        .box
+            display: flex
+            flex-direction: column
+            align-items: center
+            .boxItem
+                width: 250px
+                margin-left: 45px
