@@ -45,7 +45,7 @@ const ImageAndDescription = ({
           </div>
         ) : (
           <>
-            <span className={styles.price}>${price}</span>
+            <span className={styles.price}>${commafy(price)}</span>
             <div className={styles.utilsContainer}>
               <div className={styles.quantity}>
                 <button type="button" aria-label="decrease quantity">

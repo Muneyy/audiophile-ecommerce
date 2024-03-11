@@ -35,7 +35,7 @@ const Page = ({
         imageProduct={imageProduct}
         title={title}
         description={description}
-        price={commafy(price)}
+        price={price}
       />
       <FeaturesAndBox features={features} includedItems={includedItems} />
       <ImageGallery imageGallery={imageGallery} title={title} />
