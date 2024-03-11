@@ -14,7 +14,6 @@ import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import FeaturesAndBox from '@/components/PDP/FeaturesAndBox'
 import ImageGallery from '@/components/PDP/ImageGallery'
 import Recommendations from '@/components/PDP/Recommendations'
-import commafy from '@/utils/commafy'
 
 const fetchedData = {
   title: 'XX99 Mark II Headphones',
@@ -90,7 +89,7 @@ const Page = ({
         imageProduct={imageProduct}
         title={title}
         description={description}
-        price={commafy(price)}
+        price={price}
       />
       <FeaturesAndBox features={features} includedItems={includedItems} />
       <ImageGallery imageGallery={imageGallery} title={title} />
