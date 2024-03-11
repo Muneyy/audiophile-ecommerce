@@ -33,7 +33,7 @@ const Checkout = () => {
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="zip-code">ZIP Code</label>
-            <input name="zip-code" type="text" placeholder="10301" />
+            <input name="zip-code" type="number" placeholder="10301" />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="city">City</label>
