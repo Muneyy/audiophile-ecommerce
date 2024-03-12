@@ -4,7 +4,7 @@ import categoryEarphones from '@/assets/categories-earphones.png'
 import categoryHeadphones from '@/assets/categories-headphones.png'
 import categorySpeakers from '@/assets/categories-speakers.png'
 import Image from 'next/image'
-import RightArrow from '@/svgs/RightArrow'
+import RedirectButton from './RedirectButton'
 const CATEGORIES_LIST = ['Headphones', 'Speakers', 'Earphones']
 
 type CategorySrc = {
@@ -32,10 +32,12 @@ const CategoriesSection = () => {
             />
           </div>
           <h2>{category}</h2>
-          <button type="button" aria-label={`go to ${category} category page`}>
-            SHOP
-            <RightArrow />
-          </button>
+          <RedirectButton
+            link={`/${category}`}
+            text="SHOP"
+            ariaLabel={`go to ${category} category page`}
+            forCategory
+          />
         </div>
       ))}
     </section>

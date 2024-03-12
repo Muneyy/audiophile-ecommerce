@@ -1,16 +1,22 @@
 import React from 'react'
 import styles from './page.module.sass'
-import { fetchedDataForPDP } from '@/app/mockRequests/mockRequests'
 
 import BackButton from '@/components/PDP/BackButton'
-import ImageAndDescription from '@/components/PDP/ImageAndDescription'
+import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import FeaturesAndBox from '@/components/PDP/FeaturesAndBox'
 import ImageGallery from '@/components/PDP/ImageGallery'
 import Recommendations from '@/components/PDP/Recommendations'
+import { fetchedDataForPDP } from '@/app/mockRequests/mockRequests'
 
 const fetchedData = fetchedDataForPDP
 
-const Page = () => {
+const Page = ({
+  params,
+}: {
+  params: {
+    category: string
+  }
+}) => {
   const {
     title,
     description,
@@ -36,6 +42,7 @@ const Page = () => {
       <Recommendations
         imageRecommendations={imageRecommendations}
         title={title}
+        params={params}
       />
     </main>
   )
