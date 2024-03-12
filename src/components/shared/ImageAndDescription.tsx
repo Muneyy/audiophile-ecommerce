@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ImageAndDescription.module.sass'
 import Image, { StaticImageData } from 'next/image'
-import Link from 'next/link'
+import RedirectButton from './RedirectButton'
 
 const ImageAndDescription = ({
   imageProduct,
@@ -37,11 +37,11 @@ const ImageAndDescription = ({
         <p>{description}</p>
         {forProductListPage ? (
           <div className={styles.utilsContainer}>
-            <Link href={`/${params?.category}/${title}`}>
-              <button type="button" aria-label={`View ${title} details`}>
-                SEE PRODUCT
-              </button>
-            </Link>
+            <RedirectButton
+              link={`/${params?.category}/${title}`}
+              text="SEE PRODUCT"
+              ariaLabel={`go to ${title} product page`}
+            />
           </div>
         ) : (
           <>

@@ -2,7 +2,9 @@ import React from 'react'
 import styles from './Recommendations.module.sass'
 import Image, { StaticImageData } from 'next/image'
 import CategoriesSection from '../shared/CategoriesSection'
-import Link from 'next/link'
+import RedirectButton from '../shared/RedirectButton'
+
+const BUTTON_TEXT = 'SEE PRODUCT'
 
 const Recommendations = ({
   imageRecommendations,
@@ -27,11 +29,11 @@ const Recommendations = ({
               sizes="100vw"
             />
             <h2>{image.title}</h2>
-            <Link href={`/${params?.category}/${image.title}`}>
-              <button type="button" aria-label="View product details">
-                SEE PRODUCT
-              </button>
-            </Link>
+            <RedirectButton
+              link={`/${params?.category}/${image.title}`}
+              text={BUTTON_TEXT}
+              ariaLabel={`go to ${image.title} product page`}
+            />
           </div>
         ))}
       </div>

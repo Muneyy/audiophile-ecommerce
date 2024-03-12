@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './BannerSection.module.sass'
-import Link from 'next/link'
+import RedirectButton from '@/components/shared/RedirectButton'
 
 const BANNER_SPAN = 'New Product'
 const BANNER_TITLE = 'XX99 Mark II Headphones'
@@ -13,11 +13,11 @@ const BannerSection = () => {
       <span>{BANNER_SPAN}</span>
       <h1>{BANNER_TITLE}</h1>
       <p>{BANNER_DESC}</p>
-      <Link href={`/headphones/${BANNER_TITLE}`}>
-        <button type="button" aria-label={`go to ${BANNER_TITLE} product page`}>
-          SEE PRODUCT
-        </button>
-      </Link>
+      <RedirectButton
+        link={`/headphones/${BANNER_TITLE}`}
+        text="SEE PRODUCT"
+        ariaLabel={`go to ${BANNER_TITLE} product page`}
+      />
     </section>
   )
 }
