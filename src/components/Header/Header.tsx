@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './Header.module.sass'
 import Link from 'next/link'
 import CartIcon from '@/svgs/CartIcon'
@@ -8,6 +8,7 @@ import MenuIcon from '@/svgs/MenuIcon'
 import Sidebar from './subcomponents/Sidebar'
 import NavLinks from '../NavLinks'
 import Cart from './subcomponents/Cart'
+import useClickOutsideHandler from '@/hooks/useClickOutside'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,26 +25,11 @@ const Header = () => {
     setIsCartOpen((prev) => !prev)
   }
 
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      const cartButtonClicked =
-        cartButtonRef.current &&
-        cartButtonRef.current.contains(e.target as Node)
-
-      const outsideClicked =
-        cartRef.current && !cartRef.current.contains(e.target as Node)
-
-      if (!cartButtonClicked && outsideClicked) {
-        setIsCartOpen(false)
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside)
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
+  useClickOutsideHandler({
+    modalRef: cartRef,
+    buttonRef: cartButtonRef,
+    setIsModalOpen: setIsCartOpen,
+  })
 
   return (
     <header className={styles.header}>
