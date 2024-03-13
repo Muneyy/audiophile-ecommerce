@@ -70,7 +70,9 @@ const Header = () => {
       >
         <CartIcon />
       </button>
-      {isCartOpen && <Cart cartRef={cartRef} />}
+      {isCartOpen && (
+        <Cart handleCartClick={handleCartClick} cartRef={cartRef} />
+      )}
     </header>
   )
 }

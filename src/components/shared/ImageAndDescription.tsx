@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ImageAndDescription.module.sass'
 import Image, { StaticImageData } from 'next/image'
 import RedirectButton from './RedirectButton'
+import commafy from '@/utils/commafy'
 
 const ImageAndDescription = ({
   imageProduct,
