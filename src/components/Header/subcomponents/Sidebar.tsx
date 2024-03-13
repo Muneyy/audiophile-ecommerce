@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './Sidebar.module.sass'
 import CloseIcon from '@/svgs/CloseIcon'
-import NavLinks from '../NavLinks'
+import NavLinks from '../../NavLinks'
 
 const Sidebar = ({
   setIsMenuOpen,

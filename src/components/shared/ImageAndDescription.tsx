@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ImageAndDescription.module.sass'
 import Image, { StaticImageData } from 'next/image'
 import RedirectButton from './RedirectButton'
+import commafy from '@/utils/commafy'
 
 const ImageAndDescription = ({
   imageProduct,
@@ -45,7 +46,7 @@ const ImageAndDescription = ({
           </div>
         ) : (
           <>
-            <span className={styles.price}>${price}</span>
+            <span className={styles.price}>${commafy(price)}</span>
             <div className={styles.utilsContainer}>
               <div className={styles.quantity}>
                 <button type="button" aria-label="decrease quantity">

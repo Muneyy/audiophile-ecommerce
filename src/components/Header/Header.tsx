@@ -1,19 +1,35 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './Header.module.sass'
 import Link from 'next/link'
 import CartIcon from '@/svgs/CartIcon'
 import MenuIcon from '@/svgs/MenuIcon'
-import Sidebar from './Sidebar'
+import Sidebar from './subcomponents/Sidebar'
 import NavLinks from '../NavLinks'
+import Cart from './subcomponents/Cart'
+import useClickOutsideHandler from '@/hooks/useClickOutside'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCartOpen, setIsCartOpen] = useState(false)
 
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => !prev)
   }
+
+  const cartButtonRef = useRef<HTMLButtonElement>(null)
+  const cartRef = useRef<HTMLDivElement>(null)
+
+  const handleCartClick = () => {
+    setIsCartOpen((prev) => !prev)
+  }
+
+  useClickOutsideHandler({
+    modalRef: cartRef,
+    buttonRef: cartButtonRef,
+    setIsModalOpen: setIsCartOpen,
+  })
 
   return (
     <header className={styles.header}>
@@ -32,9 +48,17 @@ const Header = () => {
       <nav className={styles.desktopNavLinks}>
         <NavLinks />
       </nav>
-      <button type="button" aria-label="open cart display">
+      <button
+        onClick={handleCartClick}
+        type="button"
+        aria-label="open cart display"
+        ref={cartButtonRef}
+      >
         <CartIcon />
       </button>
+      {isCartOpen && (
+        <Cart handleCartClick={handleCartClick} cartRef={cartRef} />
+      )}
     </header>
   )
 }

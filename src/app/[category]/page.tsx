@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './page.module.sass'
 import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import CategoriesSection from '@/components/shared/CategoriesSection'
-import { fetchedDataForPLP } from '../mockRequests/mockRequests'
+import { fetchedDataForPLP } from '@/mockRequests/mockRequests'
 
 type TCategory = {
   category: 'speakers' | 'earphones' | 'headphones'

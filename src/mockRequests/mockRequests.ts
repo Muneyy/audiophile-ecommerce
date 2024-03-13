@@ -75,3 +75,31 @@ export const fetchedDataForPLP = {
     },
   ],
 }
+
+import xx99mkii from '@/assets/cart/image-xx99-mark-two-headphones.jpg'
+import xx59 from '@/assets/cart/image-xx59-headphones.jpg'
+import yx1 from '@/assets/cart/image-yx1-earphones.jpg'
+
+export const cartData = {
+  cart: [
+    {
+      title: 'XX99 MK II',
+      quantity: 1,
+      price: 2999,
+      imageSrc: xx99mkii,
+    },
+    {
+      title: 'XX59',
+      quantity: 2,
+      price: 899,
+      imageSrc: xx59,
+    },
+    {
+      title: 'YX1',
+      quantity: 1,
+      price: 599,
+      imageSrc: yx1,
+    },
+  ],
+  shippingFee: 50,
+}

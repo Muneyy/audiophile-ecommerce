@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './page.module.sass'
 
-import BackButton from '@/components/PDP/BackButton'
+import BackButton from '@/components/shared/BackButton'
 import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import FeaturesAndBox from '@/components/PDP/FeaturesAndBox'
 import ImageGallery from '@/components/PDP/ImageGallery'
 import Recommendations from '@/components/PDP/Recommendations'
-import { fetchedDataForPDP } from '@/app/mockRequests/mockRequests'
+import { fetchedDataForPDP } from '@/mockRequests/mockRequests'
 
 const fetchedData = fetchedDataForPDP
 

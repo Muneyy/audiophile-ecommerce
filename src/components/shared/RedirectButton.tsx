@@ -11,15 +11,20 @@ const RedirectButton = ({
   text,
   ariaLabel,
   forCategory,
+  handleCartClick,
 }: {
   link: string
   text: string
   ariaLabel: string
   forCategory?: boolean
+  handleCartClick?: () => void
 }) => {
   const router = useRouter()
   const handleClick = () => {
     router.push(link)
+    if (handleCartClick) {
+      handleCartClick()
+    }
   }
   return (
     <button
