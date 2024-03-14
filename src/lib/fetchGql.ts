@@ -1,4 +1,10 @@
-export default async function fetchGql(query: string) {
+'use server'
+
+export default async function fetchGql(
+  query: string,
+  name?: string | null,
+  category?: string | null
+) {
   try {
     const response = await fetch(
       `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
@@ -8,15 +14,11 @@ export default async function fetchGql(query: string) {
           Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ query }),
+        body: JSON.stringify({ query, variables: { name, category } }),
       }
     )
-
-    if (!response.ok) return undefined
-
     const data = await response.json()
-
-    return data
+    return data.data
   } catch (error) {
     throw new Error(`Error: ${error}`)
   }
