@@ -3,20 +3,27 @@ import styles from './BannerSection.module.sass'
 import RedirectButton from '@/components/shared/RedirectButton'
 
 const BANNER_SPAN = 'New Product'
-const BANNER_TITLE = 'XX99 Mark II Headphones'
-const BANNER_DESC =
-  'Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.'
 
-const BannerSection = () => {
+const BannerSection = ({
+  bannerContent,
+}: {
+  bannerContent: {
+    title: string
+    description: string
+    urlDesktop: string
+    urlMobile: string
+  }
+}) => {
+  const { title, description } = bannerContent
   return (
     <section className={`${styles.sectionBanner} banner-background`}>
       <span>{BANNER_SPAN}</span>
-      <h1>{BANNER_TITLE}</h1>
-      <p>{BANNER_DESC}</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
       <RedirectButton
-        link={`/headphones/${BANNER_TITLE}`}
+        link={`/headphones/${title}`}
         text="SEE PRODUCT"
-        ariaLabel={`go to ${BANNER_TITLE} product page`}
+        ariaLabel={`go to ${title} product page`}
       />
     </section>
   )
