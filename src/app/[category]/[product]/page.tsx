@@ -5,45 +5,54 @@ import BackButton from '@/components/shared/BackButton'
 import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import FeaturesAndBox from '@/components/PDP/FeaturesAndBox'
 import ImageGallery from '@/components/PDP/ImageGallery'
+import fetchGql from '@/lib/fetchGql'
+import { notFound } from 'next/navigation'
 import Recommendations from '@/components/PDP/Recommendations'
-import { fetchedDataForPDP } from '@/mockRequests/mockRequests'
+import queryProduct from '@/lib/graphqlQueries/queryProduct'
+import { TypePDPContent } from '@/lib/types'
 
-const fetchedData = fetchedDataForPDP
+interface TypeParams {
+  category: string
+  product: string
+}
 
-const Page = ({
-  params,
-}: {
-  params: {
-    category: string
+const Page = async ({ params }: { params: TypeParams }) => {
+  const fetchedData: TypePDPContent = await fetchGql(
+    queryProduct,
+    params.product,
+    params.category
+  )
+
+  if (!fetchedData || fetchedData.productCollection.items.length === 0) {
+    notFound()
   }
-}) => {
+
   const {
     title,
     description,
     price,
+    apiRoute,
+    category,
     features,
     includedItems,
-    imageProduct,
-    imageGallery,
-    imageRecommendations,
-  } = fetchedData
+    imageMain,
+    imageGalleryCollection,
+  } = fetchedData.productCollection.items[0]
 
   return (
     <main className={styles.main}>
       <BackButton />
       <ImageAndDescription
-        imageProduct={imageProduct}
+        imageProduct={imageMain}
         title={title}
         description={description}
+        apiRoute={apiRoute}
+        category={category}
         price={price}
       />
       <FeaturesAndBox features={features} includedItems={includedItems} />
-      <ImageGallery imageGallery={imageGallery} title={title} />
-      <Recommendations
-        imageRecommendations={imageRecommendations}
-        title={title}
-        params={params}
-      />
+      <ImageGallery imageGallery={imageGalleryCollection.items} title={title} />
+      <Recommendations />
     </main>
   )
 }

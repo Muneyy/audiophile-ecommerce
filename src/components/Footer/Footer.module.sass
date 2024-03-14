@@ -3,14 +3,14 @@
     display: flex
     flex-direction: column
     align-items: center
-    max-width: 1440px
 
 .sectionOne
-    max-width: 90%
+    max-width: 1440px
     display: flex
     flex-direction: column
     gap: 30px
     text-align: center
+    padding: 0 5%
     .textContainer
         display: flex
         flex-direction: column
@@ -19,6 +19,7 @@
         font-size: 2rem
         font-weight: 800
         letter-spacing: 0.1rem
+        text-transform: uppercase
     p
         color: var(--gray-text)
         font-weight: 450
@@ -29,6 +30,7 @@
         display: grid
         grid-template-columns: 1fr 1fr
         align-items: center
+        padding: 0 5%
         .imageContainer
           order: 1
         .textContainer
@@ -36,6 +38,9 @@
             text-align: left
             p
               padding: 0
+    @media screen and ( min-width: 1550px )
+        padding: 0
+        
 
 .imageContainer
     display: flex
@@ -62,14 +67,32 @@
 .sectionTwo
     width: 100%
     margin-top: 30px
-    padding: 30px 60px
+    padding: 30px 0
     background-color: var(--background)
     color: white
-    display: flex
-    flex-direction: column
     align-items: center
     text-align: center
-    gap: 30px
+    .fillBackground
+        display: flex
+        flex-direction: column
+        gap: 30px   
+        max-width: 1440px
+        margin: 0 auto
+        position: relative
+        &:before
+            content: ''
+            width: 125px
+            height: 5px
+            position: absolute
+            left: 5%
+            top: -30px
+            background-color: var(--orange)
+            @media screen and ( max-width: 769px )
+                left: calc(50% - 62.5px)
+            @media screen and ( min-width: 1550px )
+                left: 0
+        @media screen and ( max-width: 1550px )
+            padding: 0 5%
     ul
         display: flex
         flex-direction: column

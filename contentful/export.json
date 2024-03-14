@@ -1,0 +1,5385 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "product",
+        "type": "ContentType",
+        "createdAt": "2024-02-27T13:32:16.443Z",
+        "updatedAt": "2024-03-21T23:23:10.899Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2024-03-21T23:23:10.899Z",
+        "firstPublishedAt": "2024-02-27T13:32:17.084Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/content_types/product"
+      },
+      "displayField": "title",
+      "name": "Product",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "price",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "features",
+          "name": "features",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "includedItems",
+          "name": "includedItems",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageThumbnail",
+          "name": "imageThumbnail",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "imageGallery",
+          "name": "imageGallery",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "imageMain",
+          "name": "imageMain",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "apiRoute",
+          "name": "apiRoute",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "category",
+          "name": "category",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bannerUrlDesktop",
+          "name": "bannerUrlDesktop",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "bannerUrlMobile",
+          "name": "bannerUrlMobile",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "bannerDescription",
+          "name": "bannerDescription",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "HomepageContent",
+        "type": "ContentType",
+        "createdAt": "2024-03-04T09:51:56.842Z",
+        "updatedAt": "2024-03-21T23:41:33.947Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2024-03-21T23:41:33.947Z",
+        "firstPublishedAt": "2024-03-04T09:51:57.388Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 9,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/content_types/HomepageContent"
+      },
+      "displayField": "bannerTitle",
+      "name": "HomepageContent",
+      "description": "",
+      "fields": [
+        {
+          "id": "bannerTitle",
+          "name": "bannerTitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bannerDescription",
+          "name": "bannerDescription",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "categories",
+          "name": "categories",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "categoriesImages",
+          "name": "categoriesImages",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "min": 3,
+                "max": 3
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "promotionProducts",
+          "name": "promotionProducts",
+          "type": "Object",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "promotionImages",
+          "name": "promotionImages",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "bannerImage",
+          "name": "bannerImage",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "bannerContent",
+          "name": "bannerContent",
+          "type": "Object",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bannerProduct",
+          "name": "bannerProduct",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": true,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "bannerProductReference",
+          "name": "bannerProductReference",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "navLinks",
+        "type": "ContentType",
+        "createdAt": "2024-03-14T11:39:40.463Z",
+        "updatedAt": "2024-03-18T08:35:01.811Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2024-03-18T08:35:01.811Z",
+        "firstPublishedAt": "2024-03-14T11:39:40.976Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/content_types/navLinks"
+      },
+      "displayField": "entryText",
+      "name": "Categories",
+      "description": "",
+      "fields": [
+        {
+          "id": "categories",
+          "name": "categories",
+          "type": "Object",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "links",
+          "name": "links",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "categoriesImages",
+          "name": "categoriesImages",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "entryText",
+          "name": "entryText",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "footerContent",
+        "type": "ContentType",
+        "createdAt": "2024-03-14T12:43:10.615Z",
+        "updatedAt": "2024-03-14T12:43:11.281Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2024-03-14T12:43:11.281Z",
+        "firstPublishedAt": "2024-03-14T12:43:11.281Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/content_types/footerContent"
+      },
+      "displayField": "headline",
+      "name": "FooterContent",
+      "description": "",
+      "fields": [
+        {
+          "id": "headline",
+          "name": "headline",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "descriptionSecond",
+          "name": "descriptionSecond",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "copyright",
+          "name": "copyright",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "footerImage",
+          "name": "footerImage",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2rezb5w2xoyv",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2024-02-27T13:32:17.213Z",
+        "createdBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-03-21T23:23:12.072Z",
+        "updatedBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "product",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "settings": {
+            "helpText": "title of product"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "features",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "includedItems",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageThumbnail",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageGallery",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageMain",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "apiRoute",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "category",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerUrlDesktop",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerUrlMobile",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerDescription",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2rezb5w2xoyv",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 18,
+        "createdAt": "2024-03-04T09:51:57.561Z",
+        "createdBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-03-21T23:41:35.037Z",
+        "updatedBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "HomepageContent",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "bannerTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerDescription",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "categories",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "categoriesImages",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "promotionProducts",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "promotionImages",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerImage",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerContent",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerProduct",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerProductReference",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2rezb5w2xoyv",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 14,
+        "createdAt": "2024-03-14T11:39:41.106Z",
+        "createdBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-03-18T08:35:02.772Z",
+        "updatedBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "navLinks",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "settings": {},
+          "widgetId": "66frtrAqmWSowDJzQNDiD",
+          "widgetNamespace": "app"
+        },
+        {
+          "settings": {},
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {},
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {},
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {},
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {},
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "categories",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "links",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "categoriesImages",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "entryText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2rezb5w2xoyv",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2024-03-14T12:43:11.507Z",
+        "createdBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-03-14T12:43:12.521Z",
+        "updatedBy": {
+          "sys": {
+            "id": "077yin1ZOcalU1kVU6PO3L",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "footerContent",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "headline",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "descriptionSecond",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "copyright",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "footerImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "4vx3eBR8TZer3oBl8e9G5s",
+        "type": "Entry",
+        "createdAt": "2024-02-29T12:33:20.652Z",
+        "updatedAt": "2024-03-21T23:24:46.064Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2024-03-21T23:24:46.064Z",
+        "firstPublishedAt": "2024-02-29T12:39:26.161Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "product"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/4vx3eBR8TZer3oBl8e9G5s"
+      },
+      "fields": {
+        "title": {
+          "en-US": "XX99 Mark II Headphones"
+        },
+        "description": {
+          "en-US": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
+        },
+        "price": {
+          "en-US": 2999
+        },
+        "features": {
+          "en-US": "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat. The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic."
+        },
+        "includedItems": {
+          "en-US": {
+            "box": [
+              {
+                "name": "Headphone unit",
+                "quantity": 1
+              },
+              {
+                "name": "Replacement earcups",
+                "quantity": 2
+              },
+              {
+                "name": "User manual",
+                "quantity": 1
+              },
+              {
+                "name": "3.5mm 5m audio cable",
+                "quantity": 1
+              },
+              {
+                "name": "Travel bag",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "imageThumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2EAr1oJuOvRk20fy7WaSXJ"
+            }
+          }
+        },
+        "imageGallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3v9t8b4tChPP11qUMccJZ8"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3keeL4TydNKKd0J8lgshyu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "22wvmKlnffIVCPgMOV1sAr"
+              }
+            }
+          ]
+        },
+        "imageMain": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "47pvgq53mzewA9Xq1SNJQv"
+            }
+          }
+        },
+        "apiRoute": {
+          "en-US": "xx99-mark-two"
+        },
+        "category": {
+          "en-US": "headphones"
+        },
+        "bannerUrlDesktop": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3VUi4CuvSvszyQ2XtwjpkL"
+            }
+          }
+        },
+        "bannerUrlMobile": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3n89tZq0WIe23dSOZIjNSt"
+            }
+          }
+        },
+        "bannerDescription": {
+          "en-US": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "7f4y9u2wsYCun1pqLjOJT1",
+        "type": "Entry",
+        "createdAt": "2024-03-04T09:52:03.765Z",
+        "updatedAt": "2024-03-21T23:42:10.658Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 61,
+        "publishedAt": "2024-03-21T23:42:10.658Z",
+        "firstPublishedAt": "2024-03-04T10:13:13.175Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 62,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "HomepageContent"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/7f4y9u2wsYCun1pqLjOJT1"
+      },
+      "fields": {
+        "bannerTitle": {
+          "en-US": "XX99 MARK II HEADPHONES"
+        },
+        "bannerDescription": {
+          "en-US": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
+        },
+        "categories": {
+          "en-US": ["Headphones", "Speakers", "Earphones"]
+        },
+        "categoriesImages": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4QWN2J4QeOUhFSKfdMIxbQ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3VwENDrpBa7LdO0IWGfdsL"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2Wg2YexzwLmPUG2XR1BoCD"
+              }
+            }
+          ]
+        },
+        "promotionProducts": {
+          "en-US": {
+            "items": [
+              {
+                "title": "ZX9 speaker",
+                "apiRoute": "zx9-speaker",
+                "urlMobile": "https://images.ctfassets.net/2rezb5w2xoyv/4vJIIlDQirrNJ0Tc4pYAYP/6b4e3d7e9ef544c7b51a4ebacccc8be6/image-speaker-zx9.png",
+                "urlDesktop": "https://images.ctfassets.net/2rezb5w2xoyv/121nq6qCosxLqSc6vXiKSB/2de3b7c62a6f60fe65e806c158fc541b/image-speaker-zx9.png",
+                "description": "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound."
+              },
+              {
+                "title": "ZX7 Speaker",
+                "apiRoute": "zx7-speaker",
+                "urlMobile": "https://images.ctfassets.net/2rezb5w2xoyv/6YClA17waP2gFzp2MS6Iso/b30608a7a4801e9687873b55a188dd58/image-speaker-zx7.jpg",
+                "urlDesktop": "https://images.ctfassets.net/2rezb5w2xoyv/5TVnowxNidlvTKlUyZPrp4/d774cb985598656420fc6f8f284395fe/image-speaker-zx7.jpg"
+              },
+              {
+                "title": "YX1 Earphones",
+                "apiRoute": "yx1-earphones",
+                "urlMobile": "https://images.ctfassets.net/2rezb5w2xoyv/1N1AQTlylxbXE1p4dh7lik/b9fc340acbc2052cbff2d22167cdbc13/image-earphones-yx1.jpg",
+                "urlDesktop": "https://images.ctfassets.net/2rezb5w2xoyv/2aPMMq6w0rVmGdeF95kNLH/dd686cc7dfa2d7102be8e1473181c5cc/image-earphones-yx1.jpg"
+              }
+            ]
+          }
+        },
+        "promotionImages": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "121nq6qCosxLqSc6vXiKSB"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4vJIIlDQirrNJ0Tc4pYAYP"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5TVnowxNidlvTKlUyZPrp4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6YClA17waP2gFzp2MS6Iso"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2aPMMq6w0rVmGdeF95kNLH"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1N1AQTlylxbXE1p4dh7lik"
+              }
+            }
+          ]
+        },
+        "bannerImage": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3VUi4CuvSvszyQ2XtwjpkL"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3n89tZq0WIe23dSOZIjNSt"
+              }
+            }
+          ]
+        },
+        "bannerContent": {
+          "en-US": {
+            "title": "XX99 MARK II HEADPHONES",
+            "apiRoute": "xx99-mark-two",
+            "urlMobile": "https://images.ctfassets.net/2rezb5w2xoyv/3n89tZq0WIe23dSOZIjNSt/72deec2b36c03510ee734ace0901a197/image-header.jpg",
+            "urlDesktop": "https://images.ctfassets.net/2rezb5w2xoyv/3VUi4CuvSvszyQ2XtwjpkL/5e50ff012cf71dff12544429855ae6a8/image-hero.jpg",
+            "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
+          }
+        },
+        "bannerProduct": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4vx3eBR8TZer3oBl8e9G5s"
+              }
+            }
+          ]
+        },
+        "bannerProductReference": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4vx3eBR8TZer3oBl8e9G5s"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "7vaxvV5cJOEWEYmkxfNzvS",
+        "type": "Entry",
+        "createdAt": "2024-03-14T11:39:48.232Z",
+        "updatedAt": "2024-03-30T07:48:44.963Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2024-03-30T07:48:44.963Z",
+        "firstPublishedAt": "2024-03-14T11:40:09.712Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "navLinks"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/7vaxvV5cJOEWEYmkxfNzvS"
+      },
+      "fields": {
+        "categories": {
+          "en-US": {
+            "items": [
+              {
+                "url": "https://images.ctfassets.net/2rezb5w2xoyv/6BjyS9xGQUHJTFq6tO4BHS/9e1951d10496ad2a520f3d6c03de37a0/image-headphones.png",
+                "title": "Headphones"
+              },
+              {
+                "url": "https://images.ctfassets.net/2rezb5w2xoyv/1vfTsBNlVaUBOoMsumIUU4/e12b0e974f48095ea5a7ce1dcf3296f2/image-speakers.png",
+                "title": "Speakers"
+              },
+              {
+                "url": "https://images.ctfassets.net/2rezb5w2xoyv/HYxBBYTIBGD5AgLnp6uvZ/71aed7acf15ec6dda15e5f1a9696e95e/image-earphones.png",
+                "title": "Earphones"
+              }
+            ]
+          }
+        },
+        "links": {
+          "en-US": ["Headphones", "Speakers", "Earphones"]
+        },
+        "categoriesImages": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "HYxBBYTIBGD5AgLnp6uvZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6BjyS9xGQUHJTFq6tO4BHS"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1vfTsBNlVaUBOoMsumIUU4"
+              }
+            }
+          ]
+        },
+        "entryText": {
+          "en-US": "categories"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "1adEvqgfmjTjFjiGrR5ohd",
+        "type": "Entry",
+        "createdAt": "2024-03-14T12:43:18.078Z",
+        "updatedAt": "2024-03-14T12:45:11.547Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T12:45:11.547Z",
+        "firstPublishedAt": "2024-03-14T12:45:11.547Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "footerContent"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/1adEvqgfmjTjFjiGrR5ohd"
+      },
+      "fields": {
+        "headline": {
+          "en-US": "Bringing you the best audio gear"
+        },
+        "description": {
+          "en-US": "Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment."
+        },
+        "descriptionSecond": {
+          "en-US": "Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week."
+        },
+        "copyright": {
+          "en-US": "Copyright 2021 Audiophile. All rights reserved"
+        },
+        "footerImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "763PxabNtiGURUgBzAGBoT"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "w723X6YMwOcU52H3YA0ao",
+        "type": "Entry",
+        "createdAt": "2024-03-17T01:41:28.095Z",
+        "updatedAt": "2024-03-18T00:12:56.516Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2024-03-18T00:12:56.516Z",
+        "firstPublishedAt": "2024-03-17T01:44:17.285Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "product"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/w723X6YMwOcU52H3YA0ao"
+      },
+      "fields": {
+        "title": {
+          "en-US": "XX59 Headphones"
+        },
+        "description": {
+          "en-US": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
+        },
+        "price": {
+          "en-US": 899
+        },
+        "features": {
+          "en-US": "These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos. More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C."
+        },
+        "includedItems": {
+          "en-US": {
+            "box": [
+              {
+                "name": "Headphone unit",
+                "quantity": 1
+              },
+              {
+                "name": "Replacement earcups",
+                "quantity": 2
+              },
+              {
+                "name": "User manual",
+                "quantity": 1
+              },
+              {
+                "name": "3.5mm 5m audio cable",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "imageThumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4R6bd8RO5YNal4yLadAOpT"
+            }
+          }
+        },
+        "imageGallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4R6bd8RO5YNal4yLadAOpT"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4t6jWtxmE1vsIbduYqIgtY"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6jHcs92Wg8dUSiBBQiH6gZ"
+              }
+            }
+          ]
+        },
+        "imageMain": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4R6bd8RO5YNal4yLadAOpT"
+            }
+          }
+        },
+        "apiRoute": {
+          "en-US": "xx59"
+        },
+        "category": {
+          "en-US": "headphones"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "wlGvxsdfilGjDjWSs4rmr",
+        "type": "Entry",
+        "createdAt": "2024-03-17T01:47:57.953Z",
+        "updatedAt": "2024-03-18T00:12:45.255Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2024-03-18T00:12:45.255Z",
+        "firstPublishedAt": "2024-03-17T01:48:54.400Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "product"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/wlGvxsdfilGjDjWSs4rmr"
+      },
+      "fields": {
+        "title": {
+          "en-US": "XX99 Mark I Headphones"
+        },
+        "description": {
+          "en-US": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
+        },
+        "price": {
+          "en-US": 1750
+        },
+        "features": {
+          "en-US": "As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz. From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is includes with a balanced gold connector."
+        },
+        "includedItems": {
+          "en-US": {
+            "box": [
+              {
+                "name": "Headphone unit",
+                "quantity": 1
+              },
+              {
+                "name": "Replacement earcups",
+                "quantity": 2
+              },
+              {
+                "name": "User manual",
+                "quantity": 1
+              },
+              {
+                "name": "3.5mm 5m audio cable",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "imageThumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7HxFPHNRTJD2Cma0kguk4Q"
+            }
+          }
+        },
+        "imageGallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "59OYw7vHbhyW2cOJJGJo5r"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "23zZF67PjgKErZStTXWWDX"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5J0tbW960WDrjrrkdV718l"
+              }
+            }
+          ]
+        },
+        "imageMain": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7HxFPHNRTJD2Cma0kguk4Q"
+            }
+          }
+        },
+        "apiRoute": {
+          "en-US": "xx99-mark-one"
+        },
+        "category": {
+          "en-US": "headphones"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "74q6Gu2ihCENS2xG9xDiN",
+        "type": "Entry",
+        "createdAt": "2024-03-17T01:49:00.659Z",
+        "updatedAt": "2024-03-18T00:12:37.844Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2024-03-18T00:12:37.844Z",
+        "firstPublishedAt": "2024-03-17T01:51:23.923Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "product"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/74q6Gu2ihCENS2xG9xDiN"
+      },
+      "fields": {
+        "title": {
+          "en-US": "ZX9 Speaker"
+        },
+        "description": {
+          "en-US": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
+        },
+        "price": {
+          "en-US": 4500
+        },
+        "features": {
+          "en-US": "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m). Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms."
+        },
+        "includedItems": {
+          "en-US": {
+            "box": [
+              {
+                "name": "Speaker unit",
+                "quantity": 2
+              },
+              {
+                "name": "Speaker cloth panel",
+                "quantity": 2
+              },
+              {
+                "name": "User manual",
+                "quantity": 1
+              },
+              {
+                "name": "3.5mm 5m audio cable",
+                "quantity": 1
+              },
+              {
+                "name": "10m optical cable",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "imageThumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1DQTMTmsslYEtrqwqUwcZn"
+            }
+          }
+        },
+        "imageGallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "WpBnSu3vVB0NDGxtEdQEs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2yX8GIe7UagLqjcTnFJnGR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7IWWHmiGkgzQ1ynYbxphup"
+              }
+            }
+          ]
+        },
+        "imageMain": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1DQTMTmsslYEtrqwqUwcZn"
+            }
+          }
+        },
+        "apiRoute": {
+          "en-US": "zx9-speaker"
+        },
+        "category": {
+          "en-US": "speakers"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "G6PbOuyNaLFJU8Wq8AK55",
+        "type": "Entry",
+        "createdAt": "2024-03-17T01:51:33.078Z",
+        "updatedAt": "2024-03-18T00:12:31.205Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2024-03-18T00:12:31.205Z",
+        "firstPublishedAt": "2024-03-17T01:53:02.034Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "product"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/G6PbOuyNaLFJU8Wq8AK55"
+      },
+      "fields": {
+        "title": {
+          "en-US": "ZX7 Speaker"
+        },
+        "description": {
+          "en-US": "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
+        },
+        "price": {
+          "en-US": 3500
+        },
+        "features": {
+          "en-US": "Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage. The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience."
+        },
+        "includedItems": {
+          "en-US": {
+            "box": [
+              {
+                "name": "Speaker unit",
+                "quantity": 2
+              },
+              {
+                "name": "Speaker cloth panel",
+                "quantity": 2
+              },
+              {
+                "name": "User manual",
+                "quantity": 1
+              },
+              {
+                "name": "3.5mm 7.5m audio cable",
+                "quantity": 1
+              },
+              {
+                "name": "7.5m optical cable",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "imageThumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "44uxL4qZlFYYL3HoE0ztM"
+            }
+          }
+        },
+        "imageGallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5vAo1lIlslsOx2BeJsGnOV"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4ycIU2Iq4CIxFqqXjZEhUx"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3ngFtMf614X1anpsgAV3Tl"
+              }
+            }
+          ]
+        },
+        "imageMain": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "44uxL4qZlFYYL3HoE0ztM"
+            }
+          }
+        },
+        "apiRoute": {
+          "en-US": "zx7-speaker"
+        },
+        "category": {
+          "en-US": "speakers"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5EY3xS8z8xmyroLMJxamdk",
+        "type": "Entry",
+        "createdAt": "2024-03-17T01:54:10.809Z",
+        "updatedAt": "2024-03-18T00:12:01.952Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2024-03-18T00:12:01.952Z",
+        "firstPublishedAt": "2024-03-17T01:55:58.456Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "product"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/entries/5EY3xS8z8xmyroLMJxamdk"
+      },
+      "fields": {
+        "title": {
+          "en-US": "YX1 Wireless Earphones"
+        },
+        "description": {
+          "en-US": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
+        },
+        "price": {
+          "en-US": 599
+        },
+        "features": {
+          "en-US": "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound. The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black."
+        },
+        "includedItems": {
+          "en-US": {
+            "box": [
+              {
+                "name": "Earphone unit",
+                "quantity": 2
+              },
+              {
+                "name": "Multi-size earplugs",
+                "quantity": 6
+              },
+              {
+                "name": "User manual",
+                "quantity": 1
+              },
+              {
+                "name": "USB-C charging cable",
+                "quantity": 1
+              },
+              {
+                "name": "Travel pouch",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "imageThumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5qm5w67qpEWZFYbkAW1Iff"
+            }
+          }
+        },
+        "imageGallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7039u9aCqg5vNEs5YxpcHM"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6Yetj9mI2HBDvD48KvVs0f"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5T4fKhYTXyi6OleEmRnnKi"
+              }
+            }
+          ]
+        },
+        "imageMain": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5qm5w67qpEWZFYbkAW1Iff"
+            }
+          }
+        },
+        "apiRoute": {
+          "en-US": "yx1-earphones"
+        },
+        "category": {
+          "en-US": "earphones"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "47pvgq53mzewA9Xq1SNJQv",
+        "type": "Asset",
+        "createdAt": "2024-02-29T12:50:32.404Z",
+        "updatedAt": "2024-03-06T11:45:58.721Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-06T11:45:58.721Z",
+        "firstPublishedAt": "2024-03-06T11:45:58.721Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/47pvgq53mzewA9Xq1SNJQv"
+      },
+      "fields": {
+        "title": {
+          "en-US": "XX99 Mark II Headphones"
+        },
+        "description": {
+          "en-US": "newest headphones from audiophile"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/47pvgq53mzewA9Xq1SNJQv/6d2dcf84900e9d52d47263f1aeb64ee0/image-product.jpg",
+            "details": {
+              "size": 30145,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-product.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "WKsffJXc28tYm2xJ1wuFA",
+        "type": "Asset",
+        "createdAt": "2024-03-04T10:12:03.308Z",
+        "updatedAt": "2024-03-04T10:12:25.853Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-04T10:12:25.853Z",
+        "firstPublishedAt": "2024-03-04T10:12:25.853Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/WKsffJXc28tYm2xJ1wuFA"
+      },
+      "fields": {
+        "title": {
+          "en-US": "zx7-speaker"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/WKsffJXc28tYm2xJ1wuFA/20174e7eba0d15766848ee823fa2372a/image-speaker-zx7.jpg",
+            "details": {
+              "size": 16990,
+              "image": {
+                "width": 1110,
+                "height": 320
+              }
+            },
+            "fileName": "image-speaker-zx7.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5z1rRUI7giUkbPJpSJV1Wz",
+        "type": "Asset",
+        "createdAt": "2024-03-04T10:12:33.134Z",
+        "updatedAt": "2024-03-04T10:12:46.372Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-04T10:12:46.372Z",
+        "firstPublishedAt": "2024-03-04T10:12:46.372Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5z1rRUI7giUkbPJpSJV1Wz"
+      },
+      "fields": {
+        "title": {
+          "en-US": "zx9-speaker"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5z1rRUI7giUkbPJpSJV1Wz/4551f42af938397459e0e1837abcc237/image-speaker-zx9.png",
+            "details": {
+              "size": 208896,
+              "image": {
+                "width": 756,
+                "height": 918
+              }
+            },
+            "fileName": "image-speaker-zx9.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5DMOhIDMmDvTpCEJJXw81i",
+        "type": "Asset",
+        "createdAt": "2024-03-04T10:12:53.754Z",
+        "updatedAt": "2024-03-04T10:13:08.242Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-03-04T10:13:08.242Z",
+        "firstPublishedAt": "2024-03-04T10:13:08.242Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5DMOhIDMmDvTpCEJJXw81i"
+      },
+      "fields": {
+        "title": {
+          "en-US": "yx1-earphones"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5DMOhIDMmDvTpCEJJXw81i/5d3dd9f379d75087aea913b22ebf748c/image-earphones-yx1.jpg",
+            "details": {
+              "size": 8000,
+              "image": {
+                "width": 540,
+                "height": 320
+              }
+            },
+            "fileName": "image-earphones-yx1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "dJhE084kP9ZRcS2Q08v2a",
+        "type": "Asset",
+        "createdAt": "2024-03-04T10:18:02.908Z",
+        "updatedAt": "2024-03-04T10:18:32.788Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2024-03-04T10:18:32.788Z",
+        "firstPublishedAt": "2024-03-04T10:18:32.788Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/dJhE084kP9ZRcS2Q08v2a"
+      },
+      "fields": {
+        "title": {
+          "en-US": "banner-image"
+        },
+        "description": {
+          "en-US": "showcase of newest promoted product of audiophile"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/dJhE084kP9ZRcS2Q08v2a/a803af0875bd4c66b0896944fa248465/image-hero.jpg",
+            "details": {
+              "size": 17973,
+              "image": {
+                "width": 1440,
+                "height": 729
+              }
+            },
+            "fileName": "image-hero.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "3v9t8b4tChPP11qUMccJZ8",
+        "type": "Asset",
+        "createdAt": "2024-03-06T11:46:07.012Z",
+        "updatedAt": "2024-03-06T11:46:19.545Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-03-06T11:46:19.545Z",
+        "firstPublishedAt": "2024-03-06T11:46:19.545Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/3v9t8b4tChPP11qUMccJZ8"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/3v9t8b4tChPP11qUMccJZ8/2a792c5474e142999eadd680eae4a0fd/image-gallery-1.jpg",
+            "details": {
+              "size": 15464,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "3keeL4TydNKKd0J8lgshyu",
+        "type": "Asset",
+        "createdAt": "2024-03-06T11:46:24.323Z",
+        "updatedAt": "2024-03-06T11:46:32.292Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-03-06T11:46:32.292Z",
+        "firstPublishedAt": "2024-03-06T11:46:32.292Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/3keeL4TydNKKd0J8lgshyu"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/3keeL4TydNKKd0J8lgshyu/68cce6f7415519013487b91b3c5c6cc8/image-gallery-2.jpg",
+            "details": {
+              "size": 15493,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "22wvmKlnffIVCPgMOV1sAr",
+        "type": "Asset",
+        "createdAt": "2024-03-06T11:46:37.718Z",
+        "updatedAt": "2024-03-06T11:46:45.589Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-03-06T11:46:45.589Z",
+        "firstPublishedAt": "2024-03-06T11:46:45.589Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/22wvmKlnffIVCPgMOV1sAr"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-3"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/22wvmKlnffIVCPgMOV1sAr/276d6f676731f7b992ac0d62d13c295f/image-gallery-3.jpg",
+            "details": {
+              "size": 19502,
+              "image": {
+                "width": 635,
+                "height": 592
+              }
+            },
+            "fileName": "image-gallery-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "3VUi4CuvSvszyQ2XtwjpkL",
+        "type": "Asset",
+        "createdAt": "2024-03-14T09:48:45.048Z",
+        "updatedAt": "2024-03-14T09:49:38.103Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-03-14T09:49:38.103Z",
+        "firstPublishedAt": "2024-03-14T09:49:10.903Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/3VUi4CuvSvszyQ2XtwjpkL"
+      },
+      "fields": {
+        "title": {
+          "en-US": "xx99-desktop-banner"
+        },
+        "description": {
+          "en-US": "XX99 Mark II Headphones"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/3VUi4CuvSvszyQ2XtwjpkL/5e50ff012cf71dff12544429855ae6a8/image-hero.jpg",
+            "details": {
+              "size": 17973,
+              "image": {
+                "width": 1440,
+                "height": 729
+              }
+            },
+            "fileName": "image-hero.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "3n89tZq0WIe23dSOZIjNSt",
+        "type": "Asset",
+        "createdAt": "2024-03-14T09:49:23.492Z",
+        "updatedAt": "2024-03-14T09:50:04.969Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T09:50:04.969Z",
+        "firstPublishedAt": "2024-03-14T09:50:04.969Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/3n89tZq0WIe23dSOZIjNSt"
+      },
+      "fields": {
+        "title": {
+          "en-US": "xx99-banner-mobile"
+        },
+        "description": {
+          "en-US": "XX99 Mark II Headphones"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/3n89tZq0WIe23dSOZIjNSt/72deec2b36c03510ee734ace0901a197/image-header.jpg",
+            "details": {
+              "size": 40353,
+              "image": {
+                "width": 1536,
+                "height": 1458
+              }
+            },
+            "fileName": "image-header.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "6YClA17waP2gFzp2MS6Iso",
+        "type": "Asset",
+        "createdAt": "2024-03-14T09:50:58.034Z",
+        "updatedAt": "2024-03-14T09:51:17.087Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-14T09:51:17.087Z",
+        "firstPublishedAt": "2024-03-14T09:51:17.087Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/6YClA17waP2gFzp2MS6Iso"
+      },
+      "fields": {
+        "title": {
+          "en-US": "zx7-speaker-mobile"
+        },
+        "description": {
+          "en-US": "ZX7 SPEAKERS"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/6YClA17waP2gFzp2MS6Iso/b30608a7a4801e9687873b55a188dd58/image-speaker-zx7.jpg",
+            "details": {
+              "size": 10268,
+              "image": {
+                "width": 689,
+                "height": 320
+              }
+            },
+            "fileName": "image-speaker-zx7.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "1N1AQTlylxbXE1p4dh7lik",
+        "type": "Asset",
+        "createdAt": "2024-03-14T09:51:43.948Z",
+        "updatedAt": "2024-03-14T09:52:01.927Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T09:52:01.927Z",
+        "firstPublishedAt": "2024-03-14T09:52:01.927Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/1N1AQTlylxbXE1p4dh7lik"
+      },
+      "fields": {
+        "title": {
+          "en-US": "yx1-earphones-mobile"
+        },
+        "description": {
+          "en-US": "YX1 EARPHONES"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/1N1AQTlylxbXE1p4dh7lik/b9fc340acbc2052cbff2d22167cdbc13/image-earphones-yx1.jpg",
+            "details": {
+              "size": 15722,
+              "image": {
+                "width": 678,
+                "height": 640
+              }
+            },
+            "fileName": "image-earphones-yx1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "4vJIIlDQirrNJ0Tc4pYAYP",
+        "type": "Asset",
+        "createdAt": "2024-03-14T09:52:20.203Z",
+        "updatedAt": "2024-03-14T09:52:39.889Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-14T09:52:39.889Z",
+        "firstPublishedAt": "2024-03-14T09:52:39.889Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/4vJIIlDQirrNJ0Tc4pYAYP"
+      },
+      "fields": {
+        "title": {
+          "en-US": "zx9-speaker-mobile"
+        },
+        "description": {
+          "en-US": "ZX9 SPEAKERS"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/4vJIIlDQirrNJ0Tc4pYAYP/6b4e3d7e9ef544c7b51a4ebacccc8be6/image-speaker-zx9.png",
+            "details": {
+              "size": 66175,
+              "image": {
+                "width": 366,
+                "height": 444
+              }
+            },
+            "fileName": "image-speaker-zx9.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "121nq6qCosxLqSc6vXiKSB",
+        "type": "Asset",
+        "createdAt": "2024-03-14T10:36:43.801Z",
+        "updatedAt": "2024-03-14T10:37:21.956Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2024-03-14T10:37:21.956Z",
+        "firstPublishedAt": "2024-03-14T10:37:21.956Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/121nq6qCosxLqSc6vXiKSB"
+      },
+      "fields": {
+        "title": {
+          "en-US": "zx9-speakers-desktop"
+        },
+        "description": {
+          "en-US": "ZX9 SPEAKERS"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/121nq6qCosxLqSc6vXiKSB/2de3b7c62a6f60fe65e806c158fc541b/image-speaker-zx9.png",
+            "details": {
+              "size": 208896,
+              "image": {
+                "width": 756,
+                "height": 918
+              }
+            },
+            "fileName": "image-speaker-zx9.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5TVnowxNidlvTKlUyZPrp4",
+        "type": "Asset",
+        "createdAt": "2024-03-14T10:37:40.216Z",
+        "updatedAt": "2024-03-14T10:38:02.105Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T10:38:02.105Z",
+        "firstPublishedAt": "2024-03-14T10:38:02.105Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5TVnowxNidlvTKlUyZPrp4"
+      },
+      "fields": {
+        "title": {
+          "en-US": "zx7-speakers-desktop"
+        },
+        "description": {
+          "en-US": "ZX7 SPEAKERS"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5TVnowxNidlvTKlUyZPrp4/d774cb985598656420fc6f8f284395fe/image-speaker-zx7.jpg",
+            "details": {
+              "size": 16990,
+              "image": {
+                "width": 1110,
+                "height": 320
+              }
+            },
+            "fileName": "image-speaker-zx7.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "2aPMMq6w0rVmGdeF95kNLH",
+        "type": "Asset",
+        "createdAt": "2024-03-14T10:38:17.555Z",
+        "updatedAt": "2024-03-14T10:38:33.924Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T10:38:33.924Z",
+        "firstPublishedAt": "2024-03-14T10:38:33.924Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/2aPMMq6w0rVmGdeF95kNLH"
+      },
+      "fields": {
+        "title": {
+          "en-US": "yx1-earphones-desktop"
+        },
+        "description": {
+          "en-US": "YX1 EARPHONES"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/2aPMMq6w0rVmGdeF95kNLH/dd686cc7dfa2d7102be8e1473181c5cc/image-earphones-yx1.jpg",
+            "details": {
+              "size": 8000,
+              "image": {
+                "width": 540,
+                "height": 320
+              }
+            },
+            "fileName": "image-earphones-yx1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "6BjyS9xGQUHJTFq6tO4BHS",
+        "type": "Asset",
+        "createdAt": "2024-03-14T11:43:27.286Z",
+        "updatedAt": "2024-03-14T11:53:46.782Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T11:53:46.782Z",
+        "firstPublishedAt": "2024-03-14T11:43:49.051Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/6BjyS9xGQUHJTFq6tO4BHS"
+      },
+      "fields": {
+        "title": {
+          "en-US": "headphones"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/6BjyS9xGQUHJTFq6tO4BHS/9e1951d10496ad2a520f3d6c03de37a0/image-headphones.png",
+            "details": {
+              "size": 37782,
+              "image": {
+                "width": 438,
+                "height": 422
+              }
+            },
+            "fileName": "image-headphones.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "HYxBBYTIBGD5AgLnp6uvZ",
+        "type": "Asset",
+        "createdAt": "2024-03-14T11:43:27.310Z",
+        "updatedAt": "2024-03-14T11:53:34.750Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T11:53:34.750Z",
+        "firstPublishedAt": "2024-03-14T11:43:49.048Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/HYxBBYTIBGD5AgLnp6uvZ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "earphones"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/HYxBBYTIBGD5AgLnp6uvZ/71aed7acf15ec6dda15e5f1a9696e95e/image-earphones.png",
+            "details": {
+              "size": 29809,
+              "image": {
+                "width": 438,
+                "height": 380
+              }
+            },
+            "fileName": "image-earphones.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "1vfTsBNlVaUBOoMsumIUU4",
+        "type": "Asset",
+        "createdAt": "2024-03-14T11:43:27.312Z",
+        "updatedAt": "2024-03-14T11:53:40.888Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-14T11:53:40.888Z",
+        "firstPublishedAt": "2024-03-14T11:43:49.053Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/1vfTsBNlVaUBOoMsumIUU4"
+      },
+      "fields": {
+        "title": {
+          "en-US": "speakers"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/1vfTsBNlVaUBOoMsumIUU4/e12b0e974f48095ea5a7ce1dcf3296f2/image-speakers.png",
+            "details": {
+              "size": 31749,
+              "image": {
+                "width": 438,
+                "height": 408
+              }
+            },
+            "fileName": "image-speakers.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "763PxabNtiGURUgBzAGBoT",
+        "type": "Asset",
+        "createdAt": "2024-03-14T12:43:50.815Z",
+        "updatedAt": "2024-03-14T12:54:31.552Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2024-03-14T12:54:31.552Z",
+        "firstPublishedAt": "2024-03-14T12:44:50.885Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/763PxabNtiGURUgBzAGBoT"
+      },
+      "fields": {
+        "title": {
+          "en-US": "audiophile-footer"
+        },
+        "description": {
+          "en-US": "Audiophile footer image"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/763PxabNtiGURUgBzAGBoT/f8a6077650fe186b5977a8a698d498d0/image-best-gear.jpg",
+            "details": {
+              "size": 69871,
+              "image": {
+                "width": 1378,
+                "height": 600
+              }
+            },
+            "fileName": "image-best-gear.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "2EAr1oJuOvRk20fy7WaSXJ",
+        "type": "Asset",
+        "createdAt": "2024-03-15T11:31:50.425Z",
+        "updatedAt": "2024-03-15T11:32:15.399Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2024-03-15T11:32:15.399Z",
+        "firstPublishedAt": "2024-03-15T11:32:09.371Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/2EAr1oJuOvRk20fy7WaSXJ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "xx99-mark-two-categories"
+        },
+        "description": {
+          "en-US": "XX99 MARK TWO HEADPHONES"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/2EAr1oJuOvRk20fy7WaSXJ/79a7e8ab38f13d877362db0d20627ca1/image-xx99-mark-two.jpg",
+            "details": {
+              "size": 30145,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-xx99-mark-two.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "3aijGdgLzuVLlWc2PGIwFa",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:43:37.926Z",
+        "updatedAt": "2024-03-17T01:43:55.943Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:43:55.943Z",
+        "firstPublishedAt": "2024-03-17T01:43:55.943Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/3aijGdgLzuVLlWc2PGIwFa"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/3aijGdgLzuVLlWc2PGIwFa/baeac669683a6dbcecdcb9e22c02de36/image-gallery-1.jpg",
+            "details": {
+              "size": 12049,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "6jHcs92Wg8dUSiBBQiH6gZ",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:43:37.939Z",
+        "updatedAt": "2024-03-17T01:43:55.951Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:43:55.951Z",
+        "firstPublishedAt": "2024-03-17T01:43:55.951Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/6jHcs92Wg8dUSiBBQiH6gZ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/6jHcs92Wg8dUSiBBQiH6gZ/28e80d6911a96cff8844adcfd85b3958/image-gallery-3.jpg",
+            "details": {
+              "size": 13696,
+              "image": {
+                "width": 635,
+                "height": 592
+              }
+            },
+            "fileName": "image-gallery-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "4t6jWtxmE1vsIbduYqIgtY",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:43:38.115Z",
+        "updatedAt": "2024-03-17T01:43:55.948Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:43:55.948Z",
+        "firstPublishedAt": "2024-03-17T01:43:55.948Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/4t6jWtxmE1vsIbduYqIgtY"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/4t6jWtxmE1vsIbduYqIgtY/e59ad0a72aa8c3b5d728b1b46c86360a/image-gallery-2.jpg",
+            "details": {
+              "size": 4796,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "4R6bd8RO5YNal4yLadAOpT",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:43:38.123Z",
+        "updatedAt": "2024-03-17T01:43:55.946Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:43:55.946Z",
+        "firstPublishedAt": "2024-03-17T01:43:55.946Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/4R6bd8RO5YNal4yLadAOpT"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-product"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/4R6bd8RO5YNal4yLadAOpT/a43cfffed083e1f5caf0a94173092a42/image-product.jpg",
+            "details": {
+              "size": 14698,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-product.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "23zZF67PjgKErZStTXWWDX",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:46:35.130Z",
+        "updatedAt": "2024-03-17T01:46:57.225Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:46:57.225Z",
+        "firstPublishedAt": "2024-03-17T01:46:57.225Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/23zZF67PjgKErZStTXWWDX"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/23zZF67PjgKErZStTXWWDX/c26b3796c8684e26bf06320f06e1d287/image-gallery-2.jpg",
+            "details": {
+              "size": 13273,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5J0tbW960WDrjrrkdV718l",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:46:35.138Z",
+        "updatedAt": "2024-03-17T01:46:57.228Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:46:57.228Z",
+        "firstPublishedAt": "2024-03-17T01:46:57.228Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5J0tbW960WDrjrrkdV718l"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5J0tbW960WDrjrrkdV718l/1d7cddb1317c448533a875db0f0ad1c5/image-gallery-1.jpg",
+            "details": {
+              "size": 10997,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "59OYw7vHbhyW2cOJJGJo5r",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:46:35.139Z",
+        "updatedAt": "2024-03-17T01:46:57.223Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:46:57.223Z",
+        "firstPublishedAt": "2024-03-17T01:46:57.223Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/59OYw7vHbhyW2cOJJGJo5r"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/59OYw7vHbhyW2cOJJGJo5r/c8bab467ac6e171008523fdc90ea051d/image-gallery-3.jpg",
+            "details": {
+              "size": 34285,
+              "image": {
+                "width": 635,
+                "height": 592
+              }
+            },
+            "fileName": "image-gallery-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "7HxFPHNRTJD2Cma0kguk4Q",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:46:35.159Z",
+        "updatedAt": "2024-03-17T01:46:57.220Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:46:57.220Z",
+        "firstPublishedAt": "2024-03-17T01:46:57.220Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/7HxFPHNRTJD2Cma0kguk4Q"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-product"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/7HxFPHNRTJD2Cma0kguk4Q/bb6b3351de84464a78d097a714aa17a5/image-product.jpg",
+            "details": {
+              "size": 41669,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-product.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "WpBnSu3vVB0NDGxtEdQEs",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:50:09.585Z",
+        "updatedAt": "2024-03-17T01:50:23.842Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:50:23.842Z",
+        "firstPublishedAt": "2024-03-17T01:50:23.842Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/WpBnSu3vVB0NDGxtEdQEs"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/WpBnSu3vVB0NDGxtEdQEs/e97d5021663b8389c4ad62b9b2a065a3/image-gallery-3.jpg",
+            "details": {
+              "size": 14276,
+              "image": {
+                "width": 635,
+                "height": 592
+              }
+            },
+            "fileName": "image-gallery-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "2yX8GIe7UagLqjcTnFJnGR",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:50:09.648Z",
+        "updatedAt": "2024-03-17T01:50:23.845Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:50:23.845Z",
+        "firstPublishedAt": "2024-03-17T01:50:23.845Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/2yX8GIe7UagLqjcTnFJnGR"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/2yX8GIe7UagLqjcTnFJnGR/7f499d74482338064da1f87f4d92dbbf/image-gallery-2.jpg",
+            "details": {
+              "size": 18025,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "7IWWHmiGkgzQ1ynYbxphup",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:50:09.651Z",
+        "updatedAt": "2024-03-17T01:50:23.848Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:50:23.848Z",
+        "firstPublishedAt": "2024-03-17T01:50:23.848Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/7IWWHmiGkgzQ1ynYbxphup"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/7IWWHmiGkgzQ1ynYbxphup/a0b3192db4c67085638c17d303a4ea68/image-gallery-1.jpg",
+            "details": {
+              "size": 14963,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "1DQTMTmsslYEtrqwqUwcZn",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:50:09.653Z",
+        "updatedAt": "2024-03-17T01:50:23.841Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:50:23.841Z",
+        "firstPublishedAt": "2024-03-17T01:50:23.841Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/1DQTMTmsslYEtrqwqUwcZn"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-product"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/1DQTMTmsslYEtrqwqUwcZn/b47fff6090e99ac19bf8ed4d14b8e1c7/image-product.jpg",
+            "details": {
+              "size": 26509,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-product.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "3ngFtMf614X1anpsgAV3Tl",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:52:22.829Z",
+        "updatedAt": "2024-03-17T01:52:36.610Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:52:36.610Z",
+        "firstPublishedAt": "2024-03-17T01:52:36.610Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/3ngFtMf614X1anpsgAV3Tl"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/3ngFtMf614X1anpsgAV3Tl/d515e6b9fd8e5d10356098538d5970ab/image-gallery-1.jpg",
+            "details": {
+              "size": 10423,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5vAo1lIlslsOx2BeJsGnOV",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:52:22.843Z",
+        "updatedAt": "2024-03-17T01:52:36.607Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:52:36.607Z",
+        "firstPublishedAt": "2024-03-17T01:52:36.607Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5vAo1lIlslsOx2BeJsGnOV"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5vAo1lIlslsOx2BeJsGnOV/10f776f2ed7b9cb7bb974fe20865c3dc/image-gallery-3.jpg",
+            "details": {
+              "size": 29509,
+              "image": {
+                "width": 635,
+                "height": 592
+              }
+            },
+            "fileName": "image-gallery-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "4ycIU2Iq4CIxFqqXjZEhUx",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:52:22.846Z",
+        "updatedAt": "2024-03-17T01:52:36.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:52:36.609Z",
+        "firstPublishedAt": "2024-03-17T01:52:36.609Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/4ycIU2Iq4CIxFqqXjZEhUx"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/4ycIU2Iq4CIxFqqXjZEhUx/fae849d7007a277f0f6189dd9c2961bf/image-gallery-2.jpg",
+            "details": {
+              "size": 13886,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "44uxL4qZlFYYL3HoE0ztM",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:52:22.851Z",
+        "updatedAt": "2024-03-17T01:52:36.604Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:52:36.604Z",
+        "firstPublishedAt": "2024-03-17T01:52:36.604Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/44uxL4qZlFYYL3HoE0ztM"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-product"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/44uxL4qZlFYYL3HoE0ztM/0a1b84a6c01c6b553dbbc9b771db4e57/image-product.jpg",
+            "details": {
+              "size": 29872,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-product.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5qm5w67qpEWZFYbkAW1Iff",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:55:09.301Z",
+        "updatedAt": "2024-03-17T01:55:28.027Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:55:28.027Z",
+        "firstPublishedAt": "2024-03-17T01:55:28.027Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5qm5w67qpEWZFYbkAW1Iff"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-product"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5qm5w67qpEWZFYbkAW1Iff/f1ac5d6d7942a1bcd19aad127950f8cd/image-product.jpg",
+            "details": {
+              "size": 16505,
+              "image": {
+                "width": 1080,
+                "height": 1120
+              }
+            },
+            "fileName": "image-product.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "5T4fKhYTXyi6OleEmRnnKi",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:55:09.322Z",
+        "updatedAt": "2024-03-17T01:55:28.033Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:55:28.033Z",
+        "firstPublishedAt": "2024-03-17T01:55:28.033Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/5T4fKhYTXyi6OleEmRnnKi"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/5T4fKhYTXyi6OleEmRnnKi/7c7eb34cc131946b210ee0c07ed035d2/image-gallery-1.jpg",
+            "details": {
+              "size": 12305,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "6Yetj9mI2HBDvD48KvVs0f",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:55:09.333Z",
+        "updatedAt": "2024-03-17T01:55:28.032Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:55:28.032Z",
+        "firstPublishedAt": "2024-03-17T01:55:28.032Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/6Yetj9mI2HBDvD48KvVs0f"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/6Yetj9mI2HBDvD48KvVs0f/161f1efeaa138cc0cb50baa1e9e2f585/image-gallery-2.jpg",
+            "details": {
+              "size": 6069,
+              "image": {
+                "width": 445,
+                "height": 280
+              }
+            },
+            "fileName": "image-gallery-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "id": "7039u9aCqg5vNEs5YxpcHM",
+        "type": "Asset",
+        "createdAt": "2024-03-17T01:55:09.333Z",
+        "updatedAt": "2024-03-17T01:55:28.029Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-03-17T01:55:28.029Z",
+        "firstPublishedAt": "2024-03-17T01:55:28.029Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/2rezb5w2xoyv/environments/master/assets/7039u9aCqg5vNEs5YxpcHM"
+      },
+      "fields": {
+        "title": {
+          "en-US": "image-gallery-3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2rezb5w2xoyv/7039u9aCqg5vNEs5YxpcHM/75b67287309eb68e1c75bdacc4182c9c/image-gallery-3.jpg",
+            "details": {
+              "size": 41595,
+              "image": {
+                "width": 635,
+                "height": 592
+              }
+            },
+            "fileName": "image-gallery-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "2PxCaUc88lU6uDBqcGSIDb",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "84a1be0f-d079-4a87-ae1f-9f3e5da02c3d"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "createdAt": "2024-02-27T13:30:57Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedAt": "2024-02-27T13:30:57Z"
+      }
+    }
+  ],
+  "webhooks": [],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "2PR3Hy9VGX7KRtm4F2bEm1",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2rezb5w2xoyv"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "createdAt": "2024-02-27T13:30:57Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "077yin1ZOcalU1kVU6PO3L"
+          }
+        },
+        "updatedAt": "2024-02-27T13:30:57Z"
+      }
+    }
+  ]
+}

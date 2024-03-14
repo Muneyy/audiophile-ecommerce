@@ -1,41 +1,39 @@
 import React from 'react'
 import styles from './Categories.module.sass'
-import categoryEarphones from '@/assets/categories-earphones.png'
-import categoryHeadphones from '@/assets/categories-headphones.png'
-import categorySpeakers from '@/assets/categories-speakers.png'
 import Image from 'next/image'
 import RedirectButton from './RedirectButton'
-const CATEGORIES_LIST = ['Headphones', 'Speakers', 'Earphones']
+import fetchGql from '@/lib/fetchGql'
+import queryForCategories from '@/lib/graphqlQueries/queryForCategories'
 
-type CategorySrc = {
-  [key: string]: string
+type CategoryType = {
+  title: string
+  url: string
 }
 
-const categorySrc: CategorySrc = {
-  Headphones: categoryHeadphones.src,
-  Speakers: categorySpeakers.src,
-  Earphones: categoryEarphones.src,
-}
+const CategoriesSection = async () => {
+  const fetchedData = await fetchGql(queryForCategories)
 
-const CategoriesSection = () => {
+  const CATEGORIES_LIST: CategoryType[] =
+    fetchedData.navLinksCollection.items[0].categories.items
+
   return (
     <section className={styles.sectionCategories}>
       {CATEGORIES_LIST.map((category) => (
-        <div className={styles.categoryCard} key={category}>
+        <div className={styles.categoryCard} key={category.title}>
           <div className={styles.imageContainer}>
             <Image
-              src={categorySrc[category]}
+              src={category.url}
               alt={`${category} category`}
               width={0}
               height={0}
               sizes="100vw"
             />
           </div>
-          <h2>{category}</h2>
+          <h2>{category.title}</h2>
           <RedirectButton
-            link={`/${category}`}
+            link={`/${category.title}`}
             text="SHOP"
-            ariaLabel={`go to ${category} category page`}
+            ariaLabel={`go to ${category.title} category page`}
             forCategory
           />
         </div>
