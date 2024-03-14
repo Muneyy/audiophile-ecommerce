@@ -4,13 +4,17 @@ import fetchGql from '@/lib/fetchGql'
 import { ReactNode, createContext, useEffect, useMemo, useState } from 'react'
 
 const queryForNavLinks = `
-{
-  navLinks(id: "7vaxvV5cJOEWEYmkxfNzvS") {
-    links
+  {
+    navLinks(id: "7vaxvV5cJOEWEYmkxfNzvS") {
+      links
+    }
   }
-}
 `
-export const CartAndLinksContext = createContext({
+type CartAndLinksContextType = {
+  navLinks: string[]
+}
+
+export const CartAndLinksContext = createContext<CartAndLinksContextType>({
   navLinks: [],
 })
 
@@ -19,20 +23,27 @@ export default function CartAndLinksProvider({
 }: {
   children: ReactNode
 }) {
-  //   const [cart, setCart] = useState([])
-  const [navLinks, setNavLinks] = useState([])
+  const [navLinks, setNavLinks] = useState<string[]>([])
 
   useEffect(() => {
-    async function getLinks() {
+    const getLinks = async () => {
       try {
-        const data = await fetchGql(queryForNavLinks)
-        return data.data
-      } catch (err: unknown) {
+        const storedNavLinks = localStorage.getItem('navLinks')
+        if (storedNavLinks) {
+          setNavLinks(JSON.parse(storedNavLinks))
+        } else {
+          const data = await fetchGql(queryForNavLinks)
+          const fetchedLinks = data.data.navLinks.links
+          localStorage.setItem('navLinks', JSON.stringify(fetchedLinks))
+          setNavLinks(fetchedLinks)
+        }
+      } catch (err) {
         throw new Error(`Error fetching data: ${err}`)
       }
     }
-    getLinks().then((data) => setNavLinks(data.navLinks.links))
-  })
+
+    getLinks()
+  }, [])
 
   const value = useMemo(() => ({ navLinks }), [navLinks])
 
