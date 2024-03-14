@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './RedirectButton.module.sass'
 
 import { useRouter } from 'next/navigation'
@@ -20,10 +20,18 @@ const RedirectButton = ({
   handleCartClick?: () => void
 }) => {
   const router = useRouter()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   const handleClick = () => {
-    router.push(link)
-    if (handleCartClick) {
-      handleCartClick()
+    if (mounted && router) {
+      router.push(link)
+      if (handleCartClick) {
+        handleCartClick()
+      }
     }
   }
   return (
