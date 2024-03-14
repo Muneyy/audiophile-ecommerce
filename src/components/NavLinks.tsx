@@ -1,13 +1,17 @@
-import Link from 'next/link'
-import React from 'react'
-import styles from './NavLinks.module.sass'
+'use client'
 
-const NAV_LINKS = ['Home', 'Headphones', 'Speakers', 'Earphones']
+import Link from 'next/link'
+import React, { useContext } from 'react'
+import styles from './NavLinks.module.sass'
+import { CartAndLinksContext } from '@/context/CartAndLinksContext'
 
 const NavLinks = () => {
+  const { navLinks } = useContext(CartAndLinksContext)
+  const linksWithHome = ['Home', ...navLinks]
+
   return (
     <ul>
-      {NAV_LINKS.map((link) => (
+      {linksWithHome.map((link) => (
         <li key={link} className={styles.link}>
           <Link href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}>
             {link}

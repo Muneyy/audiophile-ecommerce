@@ -10,14 +10,6 @@ async function getData() {
   {
     homepageContent(id: "7f4y9u2wsYCun1pqLjOJT1") {
       bannerTitle
-      categories
-      categoriesImagesCollection {
-        items {
-          title
-          description
-          url
-        }
-      }
       promotionProducts
       bannerContent
     }
@@ -38,27 +30,12 @@ type TypeHomepageContent = {
       urlDesktop: string
       urlMobile: string
     }
-    categories: string[]
-    categoriesImagesCollection: {
-      items: {
-        title: string
-        description: string
-        url: string
-      }[]
-    }
     promotionProducts: {
       items: {
         title: string
         description?: string
         urlDesktop: string
         urlMobile: string
-      }[]
-    }
-    promotionImagesCollection: {
-      items: {
-        title: string
-        description: string
-        url: string
       }[]
     }
   }
