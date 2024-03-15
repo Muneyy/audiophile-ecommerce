@@ -33,7 +33,7 @@ export default function CartAndLinksProvider({
           setNavLinks(JSON.parse(storedNavLinks))
         } else {
           const data = await fetchGql(queryForNavLinks)
-          const fetchedLinks = data.data.navLinks.links
+          const fetchedLinks = data.navLinks.links
           localStorage.setItem('navLinks', JSON.stringify(fetchedLinks))
           setNavLinks(fetchedLinks)
         }

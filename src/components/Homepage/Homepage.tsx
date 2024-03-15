@@ -5,23 +5,16 @@ import FeaturedSection from './subcomponents/FeaturedSection'
 import styles from './Homepage.module.sass'
 import fetchGql from '@/lib/fetchGql'
 
-async function getData() {
-  const queryHomepage = `
-  {
-    homepageContent(id: "7f4y9u2wsYCun1pqLjOJT1") {
-      bannerTitle
-      promotionProducts
-      bannerContent
-    }
-  }
-  `
-  try {
-    const data = await fetchGql(queryHomepage)
-    return data.data
-  } catch (err: unknown) {
-    throw new Error(`Error fetching data: ${err}`)
+const queryHomepage = `
+{
+  homepageContent(id: "7f4y9u2wsYCun1pqLjOJT1") {
+    bannerTitle
+    promotionProducts
+    bannerContent
   }
 }
+`
+
 type TypeHomepageContent = {
   homepageContent: {
     bannerContent: {
@@ -42,7 +35,7 @@ type TypeHomepageContent = {
 }
 
 const Homepage = async () => {
-  const fetchedData: TypeHomepageContent = await getData()
+  const fetchedData: TypeHomepageContent = await fetchGql(queryHomepage)
   const { bannerContent, promotionProducts } = fetchedData.homepageContent
 
   const dynamicBackgroundImagesStyle = () => {

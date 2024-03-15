@@ -21,18 +21,8 @@ const queryFooterContent = `
   }
 }
 `
-
-const getData = async () => {
-  try {
-    const data = await fetchGql(queryFooterContent)
-    return data.data
-  } catch (err: unknown) {
-    throw new Error(`Error fetching data: ${err}`)
-  }
-}
-
 const Footer = async () => {
-  const fetchedData = await getData()
+  const fetchedData = await fetchGql(queryFooterContent)
   const { headline, description, descriptionSecond, footerImage, copyright } =
     fetchedData.footerContent
 

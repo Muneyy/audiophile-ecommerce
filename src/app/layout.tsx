@@ -22,9 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <CartAndLinksProvider>
           <Header />
-        </CartAndLinksProvider>
-        {children}
-        <CartAndLinksProvider>
+          {children}
           <Footer />
         </CartAndLinksProvider>
       </body>

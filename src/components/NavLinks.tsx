@@ -1,12 +1,24 @@
 'use client'
 
 import Link from 'next/link'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import styles from './NavLinks.module.sass'
 import { CartAndLinksContext } from '@/context/CartAndLinksContext'
 
 const NavLinks = () => {
   const { navLinks } = useContext(CartAndLinksContext)
+  const [isNavLinksAvailable, setIsNavLinksAvailable] = useState(false)
+
+  useEffect(() => {
+    if (navLinks && navLinks.length > 0) {
+      setIsNavLinksAvailable(true)
+    }
+  }, [navLinks])
+
+  if (!isNavLinksAvailable) {
+    return null
+  }
+
   const linksWithHome = ['Home', ...navLinks]
 
   return (

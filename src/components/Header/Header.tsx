@@ -14,12 +14,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCartOpen, setIsCartOpen] = useState(false)
 
+  const cartButtonRef = useRef<HTMLButtonElement>(null)
+  const cartRef = useRef<HTMLDivElement>(null)
+
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => !prev)
   }
-
-  const cartButtonRef = useRef<HTMLButtonElement>(null)
-  const cartRef = useRef<HTMLDivElement>(null)
 
   const handleCartClick = () => {
     setIsCartOpen((prev) => !prev)
