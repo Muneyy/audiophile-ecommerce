@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ImageAndDescription.module.sass'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import RedirectButton from './RedirectButton'
 import commafy from '@/utils/commafy'
 
@@ -12,7 +12,10 @@ const ImageAndDescription = ({
   forProductListPage,
   params,
 }: {
-  imageProduct: StaticImageData
+  imageProduct: {
+    title: string
+    url: string
+  }
   title: string
   description: string
   price: number
@@ -25,7 +28,7 @@ const ImageAndDescription = ({
     <section className={styles.imageAndDescription}>
       <div className={styles.imageContainer}>
         <Image
-          src={imageProduct}
+          src={imageProduct.url}
           alt={title}
           width={0}
           height={0}
