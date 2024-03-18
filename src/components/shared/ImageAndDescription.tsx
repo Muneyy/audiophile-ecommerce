@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './ImageAndDescription.module.sass'
 import Image from 'next/image'
 import RedirectButton from './RedirectButton'
-import commafy from '@/utils/commafy'
+import CartUtils from './CartUtils'
 
 const ImageAndDescription = ({
   imageProduct,
@@ -50,23 +50,7 @@ const ImageAndDescription = ({
             />
           </div>
         ) : (
-          <>
-            <span className={styles.price}>${commafy(price)}</span>
-            <div className={styles.utilsContainer}>
-              <div className={styles.quantity}>
-                <button type="button" aria-label="decrease quantity">
-                  <span>-</span>
-                </button>
-                <span>1</span>
-                <button type="button" aria-label="increase quantity">
-                  <span>+</span>
-                </button>
-              </div>
-              <button type="button" aria-label={`Add ${title} to cart`}>
-                ADD TO CART
-              </button>
-            </div>
-          </>
+          <CartUtils title={title} price={price} imageProduct={imageProduct} />
         )}
       </div>
     </section>

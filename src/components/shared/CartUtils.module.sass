@@ -1,0 +1,36 @@
+.price
+    font-weight: 900
+    font-size: 1.2rem
+    letter-spacing: 0.1rem
+    
+.utilsContainer
+    display: flex
+    gap: 20px
+    .quantity, button
+        display: flex
+        align-items: center
+        padding: 10px 20px
+    .quantity
+        justify-content: space-between
+        font-weight: 700
+        width: 120px
+        padding: 0
+        background-color: var(--gray-bg)
+        > button
+            padding: 0
+            background-color: transparent
+            color: black
+            &:hover
+                color: var(--orange)
+    button
+        width: 150px
+        background-color: var(--orange)
+        color: white
+        justify-content: center
+        letter-spacing: 0.1rem
+        &:hover
+            filter: brightness(1.1)
+@media screen and ( max-width: 1100px )
+    .utilsContainer
+        justify-content: center
+    
