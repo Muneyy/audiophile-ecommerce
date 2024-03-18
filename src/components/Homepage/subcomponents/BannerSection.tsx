@@ -10,18 +10,19 @@ const BannerSection = ({
   bannerContent: {
     title: string
     description: string
+    apiRoute: string
     urlDesktop: string
     urlMobile: string
   }
 }) => {
-  const { title, description } = bannerContent
+  const { title, description, apiRoute } = bannerContent
   return (
     <section className={`${styles.sectionBanner} banner-background`}>
       <span>{BANNER_SPAN}</span>
       <h1>{title}</h1>
       <p>{description}</p>
       <RedirectButton
-        link={`/headphones/${title}`}
+        link={`/headphones/${apiRoute}`}
         text="SEE PRODUCT"
         ariaLabel={`go to ${title} product page`}
       />

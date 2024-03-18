@@ -11,6 +11,7 @@ const ImageAndDescription = ({
   price,
   forProductListPage,
   params,
+  apiRoute,
 }: {
   imageProduct: {
     title: string
@@ -23,6 +24,7 @@ const ImageAndDescription = ({
   params?: {
     category: string
   }
+  apiRoute?: string
 }) => {
   return (
     <section className={styles.imageAndDescription}>
@@ -42,7 +44,7 @@ const ImageAndDescription = ({
         {forProductListPage ? (
           <div className={styles.utilsContainer}>
             <RedirectButton
-              link={`/${params?.category}/${title}`}
+              link={`/${params?.category}/${apiRoute}`}
               text="SEE PRODUCT"
               ariaLabel={`go to ${title} product page`}
             />

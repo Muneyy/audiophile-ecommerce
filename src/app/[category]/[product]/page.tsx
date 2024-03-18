@@ -9,6 +9,7 @@ import ImageGallery from '@/components/PDP/ImageGallery'
 // import { fetchedDataForPDP } from '@/mockRequests/mockRequests'
 import fetchGql from '@/lib/fetchGql'
 import { notFound } from 'next/navigation'
+import Recommendations from '@/components/PDP/Recommendations'
 
 // const fetchedData = fetchedDataForPDP
 
@@ -53,8 +54,10 @@ const Page = async ({
   }
 }) => {
   const queryProduct = `
-  query GetProducts($name: String!) {
-    productCollection(where: { apiRoute_contains: $name }) {
+  query GetProducts($name: String!, $category: String!) {
+    productCollection(
+      where: {apiRoute_contains: $name, category_contains: $category}
+    ) {
       items {
         title
         apiRoute
@@ -82,7 +85,8 @@ const Page = async ({
 `
   const fetchedData: TypePDPContent = await fetchGql(
     queryProduct,
-    params.product
+    params.product,
+    params.category
   )
 
   if (!fetchedData || fetchedData.productCollection.items.length === 0) {
@@ -111,11 +115,7 @@ const Page = async ({
       />
       <FeaturesAndBox features={features} includedItems={includedItems} />
       <ImageGallery imageGallery={imageGalleryCollection.items} title={title} />
-      {/* <Recommendations
-        imageRecommendations={imageRecommendations}
-        title={title}
-        params={params}
-      /> */}
+      <Recommendations />
     </main>
   )
 }

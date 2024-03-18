@@ -20,6 +20,7 @@ type TypeHomepageContent = {
     bannerContent: {
       title: string
       description: string
+      apiRoute: string
       urlDesktop: string
       urlMobile: string
     }
@@ -27,6 +28,7 @@ type TypeHomepageContent = {
       items: {
         title: string
         description?: string
+        apiRoute: string
         urlDesktop: string
         urlMobile: string
       }[]

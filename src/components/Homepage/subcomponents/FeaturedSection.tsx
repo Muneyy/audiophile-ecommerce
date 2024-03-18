@@ -11,6 +11,7 @@ interface TypesFeaturedSection {
   promotionProducts: {
     title: string
     description?: string
+    apiRoute: string
     urlDesktop: string
     urlMobile: string
   }[]
@@ -51,7 +52,7 @@ const FeaturedSection = ({ promotionProducts }: TypesFeaturedSection) => {
             <h2>{firstProduct.title}</h2>
             <p>{firstProduct.description}</p>
             <RedirectButton
-              link={`/speakers/${firstProduct.title}`}
+              link={`/speakers/${firstProduct.apiRoute}`}
               text={BUTTON_TEXT}
               ariaLabel={`go to ${firstProduct.title} product page`}
             />
@@ -60,7 +61,7 @@ const FeaturedSection = ({ promotionProducts }: TypesFeaturedSection) => {
         <div className={`${styles.cardTwo} featured-two-bg`}>
           <h2>{secondProduct.title}</h2>
           <RedirectButton
-            link={`/speakers/${secondProduct.title}`}
+            link={`/speakers/${secondProduct.apiRoute}`}
             text={BUTTON_TEXT}
             ariaLabel={`go to ${secondProduct.title} product page`}
           />
@@ -81,7 +82,7 @@ const FeaturedSection = ({ promotionProducts }: TypesFeaturedSection) => {
           <div className={styles.textContainer}>
             <h2>{thirdProduct.title}</h2>
             <RedirectButton
-              link={`/earphones/${thirdProduct.title}`}
+              link={`/earphones/${thirdProduct.apiRoute}`}
               text={BUTTON_TEXT}
               ariaLabel={`go to ${thirdProduct.title} product page`}
             />

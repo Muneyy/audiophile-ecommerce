@@ -5,8 +5,7 @@ const notFound = async () => {
   return (
     <main className={styles.main}>
       <h1 className={styles.notFound}>
-        404 Not Found | The product does not exist or it might belong in a
-        different category.
+        404 Not Found | Category does not exist. Did you mean something else?
       </h1>
     </main>
   )
