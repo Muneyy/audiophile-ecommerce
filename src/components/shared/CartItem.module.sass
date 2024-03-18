@@ -1,8 +1,12 @@
 .cartItem
-    display: flex
-    align-items: center
-    justify-content: space-between
+    display: grid
+    grid-template-columns: auto 1fr
     gap: 20px
+    align-items: center
+    .textGroup
+        display: flex
+        flex-direction: column
+        gap: 10px
     h3
         font-weight: 900
     span
@@ -11,6 +15,20 @@
         border-radius: 10px
         width: 75px
         height: 75px
-    .textGroup
-        flex-grow: 1
-        justify-self: start
+    .rowGroup
+        display: grid
+        grid-template-columns: 1fr 10%
+        justify-content: space-between
+        align-items: center
+        button
+            background-color: white
+            padding: 0
+            height: 25px
+            width: 25px
+            position: relative
+            margin-top: 0
+            &:hover
+                transform: scale(1.1)
+            svg
+                position: absolute
+                left: 0

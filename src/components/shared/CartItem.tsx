@@ -1,7 +1,11 @@
-import React from 'react'
+'use client'
+
+import React, { useContext } from 'react'
 import styles from './CartItem.module.sass'
 import Image from 'next/image'
 import commafy from '@/utils/commafy'
+import TrashIcon from '@/svgs/TrashIcon'
+import { CartContext } from '@/context/CartContext'
 
 const CartItem = ({
   item,
@@ -13,6 +17,12 @@ const CartItem = ({
     quantity: number
   }
 }) => {
+  const { deleteFromCart } = useContext(CartContext)
+
+  const handleDeleteClick = () => {
+    deleteFromCart(item.title)
+  }
+
   return (
     <div className={styles.cartItem}>
       <Image
@@ -23,11 +33,20 @@ const CartItem = ({
         sizes="100vw"
       />
       <div className={styles.textGroup}>
-        <h3>{item.title}</h3>
-        <span>${commafy(item.price)}</span>
-      </div>
-      <div className={styles.priceGroup}>
-        <span>x{item.quantity}</span>
+        <div className={styles.rowGroup}>
+          <h3>{item.title}</h3>
+          <button
+            type="button"
+            aria-label="remove product"
+            onClick={handleDeleteClick}
+          >
+            <TrashIcon />
+          </button>
+        </div>
+        <div className={styles.rowGroup}>
+          <span>${commafy(item.price)}</span>
+          <span>x{item.quantity}</span>
+        </div>
       </div>
     </div>
   )
