@@ -86,7 +86,3 @@ export type TypeRecommendation = {
     url: string
   }
 }
-
-export type CartAndLinksContextType = {
-  navLinks: string[]
-}

@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Cart.module.sass'
-import { cartData } from '@/mockRequests/mockRequests'
 import CartItem from '@/components/shared/CartItem'
 import RedirectButton from '@/components/shared/RedirectButton'
-
-const cart = cartData.cart
+import { CartContext } from '@/context/CartContext'
 
 const Cart = ({
   cartRef,
@@ -13,6 +11,8 @@ const Cart = ({
   cartRef: React.RefObject<HTMLDivElement>
   handleCartClick: () => void
 }) => {
+  const { cart } = useContext(CartContext)
+
   return (
     <aside ref={cartRef} className={styles.cartContainer}>
       <span>Cart</span>

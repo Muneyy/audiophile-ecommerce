@@ -3,10 +3,10 @@
 import Link from 'next/link'
 import React, { useContext, useEffect, useState } from 'react'
 import styles from './NavLinks.module.sass'
-import { CartAndLinksContext } from '@/context/CartAndLinksContext'
+import { CartContext } from '@/context/CartContext'
 
 const NavLinks = () => {
-  const { navLinks } = useContext(CartAndLinksContext)
+  const { navLinks } = useContext(CartContext)
   const [isNavLinksAvailable, setIsNavLinksAvailable] = useState(false)
 
   useEffect(() => {
