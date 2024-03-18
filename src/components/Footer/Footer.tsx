@@ -47,19 +47,21 @@ const Footer = async () => {
         </div>
       </section>
       <section className={styles.sectionTwo}>
-        <div className={styles.topContainer}>
-          <Link href="/">
-            <span className={styles.logo}>audiophile</span>
-          </Link>
-          <NavLinks />
-        </div>
-        <p className={styles.audiophileDesc}>{descriptionSecond}</p>
-        <div className={styles.bottomContainer}>
-          <p>{copyright}</p>
-          <div className={styles.socialLinks}>
-            <FacebookIcon />
-            <TwitterIcon />
-            <InstagramIcon />
+        <div className={styles.fillBackground}>
+          <div className={styles.topContainer}>
+            <Link href="/">
+              <span className={styles.logo}>audiophile</span>
+            </Link>
+            <NavLinks />
+          </div>
+          <p className={styles.audiophileDesc}>{descriptionSecond}</p>
+          <div className={styles.bottomContainer}>
+            <p>{copyright}</p>
+            <div className={styles.socialLinks}>
+              <FacebookIcon />
+              <TwitterIcon />
+              <InstagramIcon />
+            </div>
           </div>
         </div>
       </section>
