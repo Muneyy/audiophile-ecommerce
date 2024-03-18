@@ -4,34 +4,10 @@ import Image from 'next/image'
 import CategoriesSection from '../shared/CategoriesSection'
 import RedirectButton from '../shared/RedirectButton'
 import fetchGql from '@/lib/fetchGql'
+import { queryRecommendations } from '@/lib/graphqlQueries'
+import { TypeRecommendation } from '@/lib/types'
 
 const BUTTON_TEXT = 'SEE PRODUCT'
-
-const queryRecommendations = `
-  {
-    productCollection(limit: 3) {
-      items {
-        title
-        apiRoute
-        category
-        imageThumbnail {
-          title
-          url
-        }
-      }
-    }
-  }
-`
-
-type TypeRecommendation = {
-  title: string
-  apiRoute: string
-  category: string
-  imageThumbnail: {
-    title: string
-    url: string
-  }
-}
 
 const Recommendations = async () => {
   const fetchedData = await fetchGql(queryRecommendations)

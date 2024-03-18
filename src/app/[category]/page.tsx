@@ -5,38 +5,8 @@ import CategoriesSection from '@/components/shared/CategoriesSection'
 import fetchGql from '@/lib/fetchGql'
 import { notFound } from 'next/navigation'
 import BackButton from '@/components/shared/BackButton'
-
-type TCategory = {
-  category: 'speakers' | 'earphones' | 'headphones'
-}
-
-const queryCategoryProducts = `
-  query($category: String!) {
-    productCollection(where: {
-      category_contains: $category
-    }) {
-      items {
-        title
-        apiRoute
-        description
-        imageMain {
-          title
-          url
-        }
-      }
-    }
-  }
-`
-
-type TypePLPProduct = {
-  title: string
-  apiRoute: string
-  description: string
-  imageMain: {
-    title: string
-    url: string
-  }
-}
+import { queryCategoryProducts } from '@/lib/graphqlQueries'
+import { TCategory, TypePLPProduct } from '@/lib/types'
 
 const Page = async ({ params }: { params: TCategory }) => {
   const categoryTitle = params.category

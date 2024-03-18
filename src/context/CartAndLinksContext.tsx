@@ -1,18 +1,9 @@
 'use client'
 
 import fetchGql from '@/lib/fetchGql'
+import { queryForNavLinks } from '@/lib/graphqlQueries'
+import { CartAndLinksContextType } from '@/lib/types'
 import { ReactNode, createContext, useEffect, useMemo, useState } from 'react'
-
-const queryForNavLinks = `
-  {
-    navLinks(id: "7vaxvV5cJOEWEYmkxfNzvS") {
-      links
-    }
-  }
-`
-type CartAndLinksContextType = {
-  navLinks: string[]
-}
 
 export const CartAndLinksContext = createContext<CartAndLinksContextType>({
   navLinks: [],

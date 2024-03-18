@@ -5,45 +5,11 @@ import BackButton from '@/components/shared/BackButton'
 import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import FeaturesAndBox from '@/components/PDP/FeaturesAndBox'
 import ImageGallery from '@/components/PDP/ImageGallery'
-// import Recommendations from '@/components/PDP/Recommendations'
-// import { fetchedDataForPDP } from '@/mockRequests/mockRequests'
 import fetchGql from '@/lib/fetchGql'
 import { notFound } from 'next/navigation'
 import Recommendations from '@/components/PDP/Recommendations'
-
-// const fetchedData = fetchedDataForPDP
-
-type TypePDPContent = {
-  productCollection: {
-    items: {
-      title: string
-      apiRoute: string
-      description: string
-      price: number
-      features: string
-      includedItems: {
-        box: {
-          name: string
-          quantity: number
-        }[]
-      }
-      imageThumbnail: {
-        title: string
-        url: string
-      }
-      imageGalleryCollection: {
-        items: {
-          title: string
-          url: string
-        }[]
-      }
-      imageMain: {
-        title: string
-        url: string
-      }
-    }[]
-  }
-}
+import { queryProduct } from '@/lib/graphqlQueries'
+import { TypePDPContent } from '@/lib/types'
 
 const Page = async ({
   params,
@@ -53,36 +19,6 @@ const Page = async ({
     product: string
   }
 }) => {
-  const queryProduct = `
-  query GetProducts($name: String!, $category: String!) {
-    productCollection(
-      where: {apiRoute_contains: $name, category_contains: $category}
-    ) {
-      items {
-        title
-        apiRoute
-        description
-        price
-        features
-        includedItems
-        imageThumbnail {
-          title
-          url
-        }
-        imageGalleryCollection {
-          items {
-            title
-            url
-          }
-        }
-        imageMain {
-          title
-          url
-        }
-      }
-    }
-  }
-`
   const fetchedData: TypePDPContent = await fetchGql(
     queryProduct,
     params.product,
@@ -100,7 +36,6 @@ const Page = async ({
     features,
     includedItems,
     imageMain,
-    // imageThumbnail,
     imageGalleryCollection,
   } = fetchedData.productCollection.items[0]
 

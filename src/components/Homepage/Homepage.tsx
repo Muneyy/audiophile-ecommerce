@@ -4,37 +4,8 @@ import CategoriesSection from '../shared/CategoriesSection'
 import FeaturedSection from './subcomponents/FeaturedSection'
 import styles from './Homepage.module.sass'
 import fetchGql from '@/lib/fetchGql'
-
-const queryHomepage = `
-{
-  homepageContent(id: "7f4y9u2wsYCun1pqLjOJT1") {
-    bannerTitle
-    promotionProducts
-    bannerContent
-  }
-}
-`
-
-type TypeHomepageContent = {
-  homepageContent: {
-    bannerContent: {
-      title: string
-      description: string
-      apiRoute: string
-      urlDesktop: string
-      urlMobile: string
-    }
-    promotionProducts: {
-      items: {
-        title: string
-        description?: string
-        apiRoute: string
-        urlDesktop: string
-        urlMobile: string
-      }[]
-    }
-  }
-}
+import { queryHomepage } from '@/lib/graphqlQueries'
+import { TypeHomepageContent } from '@/lib/types'
 
 const Homepage = async () => {
   const fetchedData: TypeHomepageContent = await fetchGql(queryHomepage)

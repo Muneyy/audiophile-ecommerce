@@ -7,22 +7,11 @@ import TwitterIcon from '@/svgs/TwitterIcon'
 import InstagramIcon from '@/svgs/InstagramIcon'
 import Link from 'next/link'
 import fetchGql from '@/lib/fetchGql'
+import { TypeFooterContent } from '@/lib/types'
+import { queryFooterContent } from '@/lib/graphqlQueries'
 
-const queryFooterContent = `
-{
-  footerContent(id: "1adEvqgfmjTjFjiGrR5ohd") {
-    headline
-    description
-    descriptionSecond
-    copyright
-    footerImage {
-      url
-    }
-  }
-}
-`
 const Footer = async () => {
-  const fetchedData = await fetchGql(queryFooterContent)
+  const fetchedData: TypeFooterContent = await fetchGql(queryFooterContent)
   const { headline, description, descriptionSecond, footerImage, copyright } =
     fetchedData.footerContent
 
