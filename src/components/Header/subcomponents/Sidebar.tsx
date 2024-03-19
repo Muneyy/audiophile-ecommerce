@@ -44,7 +44,7 @@ const Sidebar = ({
         >
           <CloseIcon />
         </button>
-        <NavLinks />
+        <NavLinks setIsMenuOpen={setIsMenuOpen} />
       </aside>
     </>
   )

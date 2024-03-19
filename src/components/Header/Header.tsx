@@ -57,10 +57,10 @@ const Header = () => {
         >
           <CartIcon />
         </button>
+        {isCartOpen && (
+          <Cart handleCartClick={handleCartClick} cartRef={cartRef} />
+        )}
       </div>
-      {isCartOpen && (
-        <Cart handleCartClick={handleCartClick} cartRef={cartRef} />
-      )}
     </header>
   )
 }
