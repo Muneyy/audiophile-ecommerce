@@ -56,14 +56,16 @@ export default function CartProvider({ children }: { children: ReactNode }) {
     getLinks()
   }, [])
 
-  const [cart, setCart] = useState<CartProductType[]>(() => {
-    const storedCart = localStorage.getItem('cart')
-    return storedCart ? JSON.parse(storedCart) : []
-  })
+  const [cart, setCart] = useState<CartProductType[]>([])
 
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart))
-  }, [cart])
+    if (typeof window !== 'undefined') {
+      const storedCart = localStorage.getItem('cart')
+      if (storedCart) {
+        setCart(JSON.parse(storedCart))
+      }
+    }
+  }, [])
 
   const addToCart = useCallback((product: CartProductType) => {
     setCart((prevCart) => {
@@ -74,6 +76,12 @@ export default function CartProvider({ children }: { children: ReactNode }) {
           i === index
             ? { ...item, quantity: item.quantity + product.quantity }
             : item
+        )
+      }
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem(
+          'cart',
+          JSON.stringify([...prevCart, product])
         )
       }
       return [...prevCart, product]
