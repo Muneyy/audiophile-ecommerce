@@ -5,11 +5,12 @@
     align-items: center
 
 .sectionOne
-    max-width: 90%
+    max-width: 1440px
     display: flex
     flex-direction: column
     gap: 30px
     text-align: center
+    padding: 0 5%
     .textContainer
         display: flex
         flex-direction: column
@@ -29,6 +30,7 @@
         display: grid
         grid-template-columns: 1fr 1fr
         align-items: center
+        padding: 0 5%
         .imageContainer
           order: 1
         .textContainer
@@ -36,6 +38,9 @@
             text-align: left
             p
               padding: 0
+    @media screen and ( min-width: 1440px )
+        padding: 0
+        
 
 .imageContainer
     display: flex

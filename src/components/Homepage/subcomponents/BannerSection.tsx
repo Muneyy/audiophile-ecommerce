@@ -18,14 +18,16 @@ const BannerSection = ({
   const { title, description, apiRoute } = bannerContent
   return (
     <section className={`${styles.sectionBanner} banner-background`}>
-      <span>{BANNER_SPAN}</span>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <RedirectButton
-        link={`/headphones/${apiRoute}`}
-        text="SEE PRODUCT"
-        ariaLabel={`go to ${title} product page`}
-      />
+      <div className={styles.wrapper}>
+        <span>{BANNER_SPAN}</span>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <RedirectButton
+          link={`/headphones/${apiRoute}`}
+          text="SEE PRODUCT"
+          ariaLabel={`go to ${title} product page`}
+        />
+      </div>
     </section>
   )
 }

@@ -1,26 +1,32 @@
 .header
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
     background-color: var(--background)
     color: #FFFFFF
-    padding: 10px 5vw
     position: relative
-    margin: 0 auto
-    
+    padding: 20px 0
+    .wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        @media screen and ( min-width: 1440px )
+            width: 1440px
+            
 .logo
     font-size: 1.5rem
     font-weight: 1000
 
-@media screen and ( max-width: 767px )
+@media screen and ( max-width: 1440px )
+    .header
+        padding: 20px 5%
+
+@media screen and ( max-width: 1200px )
     .desktopNavLinks
         display: none
     
-
-@media screen and ( min-width: 768px )
+    
+@media screen and ( min-width: 1200px )
     .header
-        padding: 20px 5%
         nav > ul 
             list-style: none
             display: flex

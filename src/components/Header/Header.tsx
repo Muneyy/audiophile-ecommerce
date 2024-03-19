@@ -34,28 +34,30 @@ const Header = () => {
   return (
     <header className={styles.header}>
       {isMenuOpen && <Sidebar setIsMenuOpen={setIsMenuOpen} />}
-      <button
-        type="button"
-        aria-label="display navigation links"
-        className={styles.menuButton}
-        onClick={handleMenuClick}
-      >
-        <MenuIcon />
-      </button>
-      <Link href="/">
-        <span className={styles.logo}>audiophile</span>
-      </Link>
-      <nav className={styles.desktopNavLinks}>
-        <NavLinks />
-      </nav>
-      <button
-        onClick={handleCartClick}
-        type="button"
-        aria-label="open cart display"
-        ref={cartButtonRef}
-      >
-        <CartIcon />
-      </button>
+      <div className={styles.wrapper}>
+        <button
+          type="button"
+          aria-label="display navigation links"
+          className={styles.menuButton}
+          onClick={handleMenuClick}
+        >
+          <MenuIcon />
+        </button>
+        <Link href="/">
+          <span className={styles.logo}>audiophile</span>
+        </Link>
+        <nav className={styles.desktopNavLinks}>
+          <NavLinks />
+        </nav>
+        <button
+          onClick={handleCartClick}
+          type="button"
+          aria-label="open cart display"
+          ref={cartButtonRef}
+        >
+          <CartIcon />
+        </button>
+      </div>
       {isCartOpen && (
         <Cart handleCartClick={handleCartClick} cartRef={cartRef} />
       )}

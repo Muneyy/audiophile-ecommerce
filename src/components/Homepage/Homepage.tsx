@@ -31,14 +31,14 @@ const Homepage = async () => {
   }
 
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       {dynamicBackgroundImagesStyle()}
       <BannerSection bannerContent={bannerContent} />
       <div className={styles.categoriesWidth}>
         <CategoriesSection />
       </div>
       <FeaturedSection promotionProducts={promotionProducts.items} />
-    </main>
+    </div>
   )
 }
 
