@@ -17,8 +17,6 @@ export default async function fetchGql(
         body: JSON.stringify({ query, variables: { name, category } }),
       }
     )
-    console.log('fetching...')
-
     const data = await response.json()
     return data.data
   } catch (error) {
