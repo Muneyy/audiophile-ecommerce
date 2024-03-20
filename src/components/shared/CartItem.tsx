@@ -6,16 +6,15 @@ import Image from 'next/image'
 import commafy from '@/utils/commafy'
 import TrashIcon from '@/svgs/TrashIcon'
 import { CartContext } from '@/context/CartContext'
+import Link from 'next/link'
+import { TypeCartProduct } from '@/lib/types'
 
 const CartItem = ({
   item,
+  closeCartOnClick,
 }: {
-  item: {
-    title: string
-    image: string
-    price: number
-    quantity: number
-  }
+  item: TypeCartProduct
+  closeCartOnClick: () => void
 }) => {
   const { deleteFromCart } = useContext(CartContext)
 
@@ -34,7 +33,12 @@ const CartItem = ({
       />
       <div className={styles.textGroup}>
         <div className={styles.rowGroup}>
-          <h3>{item.title}</h3>
+          <Link
+            onClick={closeCartOnClick}
+            href={`/${item.category}/${item.apiRoute}`}
+          >
+            <h3>{item.title}</h3>
+          </Link>
           <button
             type="button"
             aria-label="remove product"

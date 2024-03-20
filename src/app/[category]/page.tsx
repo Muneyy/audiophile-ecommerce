@@ -31,7 +31,7 @@ const Page = async ({ params }: { params: TCategory }) => {
             imageProduct={item.imageMain}
             price={100}
             forProductListPage={true}
-            params={{ category: categoryTitle }}
+            category={categoryTitle}
             apiRoute={item.apiRoute}
           />
         ))}

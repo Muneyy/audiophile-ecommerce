@@ -33,6 +33,8 @@ const Page = async ({
     title,
     description,
     price,
+    apiRoute,
+    category,
     features,
     includedItems,
     imageMain,
@@ -46,6 +48,8 @@ const Page = async ({
         imageProduct={imageMain}
         title={title}
         description={description}
+        apiRoute={apiRoute}
+        category={category}
         price={price}
       />
       <FeaturesAndBox features={features} includedItems={includedItems} />

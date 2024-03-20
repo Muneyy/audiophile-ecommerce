@@ -34,7 +34,11 @@ const Cart = ({
         )}
       </div>
       {cart.map((item) => (
-        <CartItem key={item.title} item={item} />
+        <CartItem
+          key={item.title}
+          item={item}
+          closeCartOnClick={handleCartClick}
+        />
       ))}
       {cart.length <= 0 ? (
         <p>Your cart is empty.</p>

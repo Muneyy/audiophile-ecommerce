@@ -8,10 +8,14 @@ import { CartContext } from '@/context/CartContext'
 const CartUtils = ({
   title,
   price,
+  apiRoute,
+  category,
   imageProduct,
 }: {
   title: string
   price: number
+  apiRoute: string
+  category: string
   imageProduct: {
     title: string
     url: string
@@ -25,6 +29,8 @@ const CartUtils = ({
     addToCart({
       title,
       price,
+      apiRoute,
+      category,
       quantity,
       image: imageProduct.url,
     })

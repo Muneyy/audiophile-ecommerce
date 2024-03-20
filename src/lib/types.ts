@@ -18,6 +18,7 @@ export type TypePDPContent = {
       title: string
       apiRoute: string
       description: string
+      category: string
       price: number
       features: string
       includedItems: {
@@ -85,4 +86,13 @@ export type TypeRecommendation = {
     title: string
     url: string
   }
+}
+
+export type TypeCartProduct = {
+  title: string
+  price: number
+  apiRoute: string
+  category: string
+  quantity: number
+  image: string
 }

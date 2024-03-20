@@ -8,9 +8,9 @@ const ImageAndDescription = ({
   imageProduct,
   title,
   description,
+  category,
   price,
   forProductListPage,
-  params,
   apiRoute,
 }: {
   imageProduct: {
@@ -21,10 +21,8 @@ const ImageAndDescription = ({
   description: string
   price: number
   forProductListPage?: boolean
-  params?: {
-    category: string
-  }
-  apiRoute?: string
+  category: string
+  apiRoute: string
 }) => {
   return (
     <section className={styles.imageAndDescription}>
@@ -44,13 +42,19 @@ const ImageAndDescription = ({
         {forProductListPage ? (
           <div className={styles.utilsContainer}>
             <RedirectButton
-              link={`/${params?.category}/${apiRoute}`}
+              link={`/${category}/${apiRoute}`}
               text="SEE PRODUCT"
               ariaLabel={`go to ${title} product page`}
             />
           </div>
         ) : (
-          <CartUtils title={title} price={price} imageProduct={imageProduct} />
+          <CartUtils
+            title={title}
+            price={price}
+            category={category}
+            apiRoute={apiRoute}
+            imageProduct={imageProduct}
+          />
         )}
       </div>
     </section>

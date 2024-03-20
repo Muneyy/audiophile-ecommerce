@@ -11,27 +11,21 @@ import {
   useMemo,
   useState,
 } from 'react'
+import { TypeCartProduct } from '@/lib/types'
 
 type CartContextType = {
-  cart: CartProductType[]
-  addToCart: (product: CartProductType) => void
+  cart: TypeCartProduct[]
+  addToCart: (product: TypeCartProduct) => void
   deleteFromCart: (title: string) => void
   navLinks: string[]
 }
 
 export const CartContext = createContext<CartContextType>({
   cart: [],
-  addToCart: (product: CartProductType) => {},
+  addToCart: (product: TypeCartProduct) => {},
   deleteFromCart: (title: string) => {},
   navLinks: [],
 })
-
-type CartProductType = {
-  title: string
-  price: number
-  quantity: number
-  image: string
-}
 
 export default function CartProvider({ children }: { children: ReactNode }) {
   const [navLinks, setNavLinks] = useState<string[]>([])
@@ -56,7 +50,7 @@ export default function CartProvider({ children }: { children: ReactNode }) {
     getLinks()
   }, [])
 
-  const [cart, setCart] = useState<CartProductType[]>([])
+  const [cart, setCart] = useState<TypeCartProduct[]>([])
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -67,7 +61,7 @@ export default function CartProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const addToCart = useCallback((product: CartProductType) => {
+  const addToCart = useCallback((product: TypeCartProduct) => {
     setCart((prevCart) => {
       const index = prevCart.findIndex((item) => item.title === product.title)
 

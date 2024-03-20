@@ -24,7 +24,9 @@ query GetProducts($name: String!, $category: String!) {
     items {
       title
       apiRoute
+      category
       description
+      category
       price
       features
       includedItems
