@@ -84,7 +84,9 @@ export default function CartProvider({ children }: { children: ReactNode }) {
 
   const deleteFromCart = useCallback((title: string) => {
     setCart((prevCart) => {
-      return [...prevCart.filter((product) => product.title !== title)]
+      const newCart = [...prevCart.filter((product) => product.title !== title)]
+      localStorage.setItem('cart', JSON.stringify(newCart))
+      return newCart
     })
   }, [])
 
