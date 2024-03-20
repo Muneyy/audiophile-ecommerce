@@ -14,7 +14,7 @@ const CartItem = ({
   closeCartOnClick,
 }: {
   item: TypeCartProduct
-  closeCartOnClick: () => void
+  closeCartOnClick?: () => void
 }) => {
   const { deleteFromCart } = useContext(CartContext)
 
