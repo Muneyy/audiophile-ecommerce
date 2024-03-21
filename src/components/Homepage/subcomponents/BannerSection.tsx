@@ -1,29 +1,24 @@
 import React from 'react'
 import styles from './BannerSection.module.sass'
 import RedirectButton from '@/components/shared/RedirectButton'
+import { TypeBannerContent } from '@/lib/types'
 
 const BANNER_SPAN = 'New Product'
 
 const BannerSection = ({
   bannerContent,
 }: {
-  bannerContent: {
-    title: string
-    description: string
-    apiRoute: string
-    urlDesktop: string
-    urlMobile: string
-  }
+  bannerContent: TypeBannerContent
 }) => {
-  const { title, description, apiRoute } = bannerContent
+  const { title, bannerDescription, apiRoute, category } = bannerContent
   return (
     <section className={`${styles.sectionBanner} banner-background`}>
       <div className={styles.wrapper}>
         <span>{BANNER_SPAN}</span>
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p>{bannerDescription}</p>
         <RedirectButton
-          link={`/headphones/${apiRoute}`}
+          link={`/${category}/${apiRoute}`}
           text="SEE PRODUCT"
           ariaLabel={`go to ${title} product page`}
         />

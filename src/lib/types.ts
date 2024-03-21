@@ -57,15 +57,24 @@ export type TypeFooterContent = {
   }
 }
 
+export type TypeBannerContent = {
+  title: string
+  apiRoute: string
+  category: string
+  bannerDescription: string
+  bannerUrlDesktop: {
+    title: string
+    url: string
+  }
+  bannerUrlMobile: {
+    title: string
+    url: string
+  }
+}
+
 export type TypeHomepageContent = {
   homepageContent: {
-    bannerContent: {
-      title: string
-      description: string
-      apiRoute: string
-      urlDesktop: string
-      urlMobile: string
-    }
+    bannerProductReference: TypeBannerContent
     promotionProducts: {
       items: {
         title: string

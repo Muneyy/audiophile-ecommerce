@@ -9,7 +9,8 @@ import { TypeHomepageContent } from '@/lib/types'
 
 const Homepage = async () => {
   const fetchedData: TypeHomepageContent = await fetchGql(queryHomepage)
-  const { bannerContent, promotionProducts } = fetchedData.homepageContent
+  const { bannerProductReference, promotionProducts } =
+    fetchedData.homepageContent
 
   const dynamicBackgroundImagesStyle = () => {
     // dynamically change url of background-image of hero banner
@@ -18,11 +19,11 @@ const Homepage = async () => {
       <style scoped>
         {`
       .banner-background {
-        background-image: url(${bannerContent.urlDesktop});
+        background-image: url(${bannerProductReference.bannerUrlDesktop.url});
       }
       @media (max-width: 1200px) {
         .banner-background {
-          background-image: url(${bannerContent.urlMobile});
+          background-image: url(${bannerProductReference.bannerUrlMobile.url});
         }
       }
     `}
@@ -33,7 +34,7 @@ const Homepage = async () => {
   return (
     <div className={styles.main}>
       {dynamicBackgroundImagesStyle()}
-      <BannerSection bannerContent={bannerContent} />
+      <BannerSection bannerContent={bannerProductReference} />
       <div className={styles.categoriesWidth}>
         <CategoriesSection />
       </div>
