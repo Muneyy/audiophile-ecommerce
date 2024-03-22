@@ -23,7 +23,7 @@ const FormField: React.FC<FormFieldProps> = ({
     <>
       <div className={styles.labelAndError}>
         <label htmlFor={name}>{label}</label>
-        {errors.name && <p>{errors.name.message?.toString()}</p>}
+        {errors[name] && <p>{errors[name]!.message?.toString()}</p>}
       </div>
       <input
         {...register(name)}

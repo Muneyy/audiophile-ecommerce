@@ -7,7 +7,7 @@ import commafy from '@/utils/commafy'
 import CartItem from '@/components/shared/CartItem'
 import { CartContext } from '@/context/CartContext'
 
-const Summary = () => {
+const Summary = ({ FORM_ID }: { FORM_ID: string }) => {
   const { cart } = useContext(CartContext)
 
   const RAW_COST = cart.reduce(
@@ -44,6 +44,7 @@ const Summary = () => {
       </div>
       <button
         type="submit"
+        form={FORM_ID}
         aria-label={`Continue to payment page with a grand total of ${GRAND_TOTAL}`}
       >
         CONTINUE & PAY
