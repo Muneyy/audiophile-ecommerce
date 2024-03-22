@@ -1,16 +1,45 @@
+'use client'
+
 import React from 'react'
 import styles from './Checkout.module.sass'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 const Checkout = () => {
+  const userSchema = z.object({
+    name: z.string().min(3, { message: 'Name is too short' }),
+  })
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(userSchema),
+  })
+
+  const onSubmit = (data: any) => {
+    console.log(data)
+  }
+
   return (
     <section className={styles.checkoutSection}>
       <h1>CHECKOUT</h1>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className={styles.formSection}>
           <span>BILLING DETAILS</span>
           <div className={styles.formGroup}>
-            <label htmlFor="name">Name</label>
-            <input name="name" type="text" placeholder="Alexei Ward" />
+            <div className={styles.labelAndError}>
+              <label htmlFor="name">Name</label>
+              {errors.name && <p>{errors.name.message?.toString()}</p>}
+            </div>
+            <input
+              {...register('name')}
+              name="name"
+              type="text"
+              placeholder="Alexei Ward"
+            />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="email">Email Address</label>
@@ -79,6 +108,9 @@ const Checkout = () => {
             <label htmlFor="e-money-pin">e-Money PIN</label>
             <input name="e-money-pin" type="number" placeholder="6891" />
           </div>
+        </div>
+        <div className={styles.formSection}>
+          <button type="submit">PLACE ORDER</button>
         </div>
       </form>
     </section>
