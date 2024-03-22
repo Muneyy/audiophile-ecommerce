@@ -5,6 +5,7 @@ import styles from './Checkout.module.sass'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import FormField from './FormField'
 
 const Checkout = () => {
   const userSchema = z.object({
@@ -30,47 +31,77 @@ const Checkout = () => {
         <div className={styles.formSection}>
           <span>BILLING DETAILS</span>
           <div className={styles.formGroup}>
-            <div className={styles.labelAndError}>
-              <label htmlFor="name">Name</label>
-              {errors.name && <p>{errors.name.message?.toString()}</p>}
-            </div>
-            <input
-              {...register('name')}
+            <FormField
               name="name"
+              label="Name"
               type="text"
               placeholder="Alexei Ward"
+              register={register}
+              errors={errors}
             />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="email">Email Address</label>
-            <input name="email" type="email" placeholder="alexei@gmail.com" />
+            <FormField
+              name="email"
+              label="Email Address"
+              type="email"
+              placeholder="alexei@gmail.com"
+              register={register}
+              errors={errors}
+            />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="phone">Phone Number</label>
-            <input name="phone" type="tel" placeholder="+1 202-555-0135" />
+            <FormField
+              name="phone"
+              label="Phone Number"
+              type="tel"
+              placeholder="+1 202-555-0135"
+              register={register}
+              errors={errors}
+            />
           </div>
         </div>
         <div className={styles.formSection}>
           <span>SHIPPING INFO</span>
           <div className={`${styles.formGroup} ${styles.twoColumns}`}>
-            <label htmlFor="address">Address</label>
-            <input
+            <FormField
               name="address"
+              label="Address"
               type="text"
               placeholder="1137 Williams Avenue"
+              register={register}
+              errors={errors}
             />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="zip-code">ZIP Code</label>
-            <input name="zip-code" type="number" placeholder="10301" />
+            <FormField
+              name="zip-code"
+              label="ZIP Code"
+              type="number"
+              placeholder="10301"
+              register={register}
+              errors={errors}
+            />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="city">City</label>
-            <input name="city" type="text" placeholder="New York" />
+            <FormField
+              name="city"
+              label="City"
+              type="text"
+              placeholder="New York"
+              register={register}
+              errors={errors}
+            />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="country">Country</label>
-            <input name="country" type="text" placeholder="United States" />
+            <FormField
+              name="country"
+              label="Country"
+              type="text"
+              placeholder="United States"
+              register={register}
+              errors={errors}
+            />
           </div>
         </div>
         <div className={styles.formSection}>
@@ -97,16 +128,24 @@ const Checkout = () => {
             </label>
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="e-money number">e-Money Number</label>
-            <input
+            <FormField
               name="e-money-number"
+              label="e-Money Number"
               type="number"
               placeholder="238521993"
+              register={register}
+              errors={errors}
             />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="e-money-pin">e-Money PIN</label>
-            <input name="e-money-pin" type="number" placeholder="6891" />
+            <FormField
+              name="e-money-pin"
+              label="e-Money PIN"
+              type="number"
+              placeholder="6891"
+              register={register}
+              errors={errors}
+            />
           </div>
         </div>
         <div className={styles.formSection}>
