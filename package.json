@@ -15,10 +15,13 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
     "graphql-tag": "^2.12.6",
-    "next": "14.1.0",
+    "next": "^14.1.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
