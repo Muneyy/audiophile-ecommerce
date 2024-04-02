@@ -1,38 +1,37 @@
 import React from 'react'
 import styles from './Recommendations.module.sass'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import CategoriesSection from '../shared/CategoriesSection'
 import RedirectButton from '../shared/RedirectButton'
+import fetchGql from '@/lib/fetchGql'
+import queryRecommendations from '@/lib/graphqlQueries/queryRecommendations'
+import { TypeRecommendation } from '@/lib/types'
 
 const BUTTON_TEXT = 'SEE PRODUCT'
 
-const Recommendations = ({
-  imageRecommendations,
-  title,
-  params,
-}: {
-  imageRecommendations: { src: StaticImageData; title: string }[]
-  title: string
-  params?: { category: string }
-}) => {
+const Recommendations = async () => {
+  const fetchedData = await fetchGql(queryRecommendations)
+
+  const productList: TypeRecommendation[] = fetchedData.productCollection.items
+
   return (
     <section className={styles.recommendations}>
       <span>YOU MAY ALSO LIKE</span>
       <div className={styles.productList}>
-        {imageRecommendations.map((image, index) => (
+        {productList.map((item, index) => (
           <div key={index} className={styles.imageContainer}>
             <Image
-              src={image.src}
-              alt={title}
+              src={item.imageThumbnail.url}
+              alt={item.title}
               width={0}
               height={0}
               sizes="100vw"
             />
-            <h2>{image.title}</h2>
+            <h2>{item.title}</h2>
             <RedirectButton
-              link={`/${params?.category}/${image.title}`}
+              link={`/${item.category}/${item.apiRoute}`}
               text={BUTTON_TEXT}
-              ariaLabel={`go to ${image.title} product page`}
+              ariaLabel={`go to ${item.title} product page`}
             />
           </div>
         ))}

@@ -2,30 +2,37 @@ import React from 'react'
 import styles from './page.module.sass'
 import ImageAndDescription from '@/components/shared/ImageAndDescription'
 import CategoriesSection from '@/components/shared/CategoriesSection'
-import { fetchedDataForPLP } from '@/mockRequests/mockRequests'
+import fetchGql from '@/lib/fetchGql'
+import { notFound } from 'next/navigation'
+import BackButton from '@/components/shared/BackButton'
+import queryCategoryProducts from '@/lib/graphqlQueries/queryCategoryProducts'
+import { TCategory, TypePLPProduct } from '@/lib/types'
 
-type TCategory = {
-  category: 'speakers' | 'earphones' | 'headphones'
-}
-
-const fetchedData = fetchedDataForPLP
-
-const Page = ({ params }: { params: TCategory }) => {
+const Page = async ({ params }: { params: TCategory }) => {
   const categoryTitle = params.category
+
+  const fetchedData = await fetchGql(queryCategoryProducts, null, categoryTitle)
+
+  if (!fetchedData || fetchedData.productCollection.items.length === 0) {
+    notFound()
+  }
+  const productList: TypePLPProduct[] = fetchedData.productCollection.items
 
   return (
     <main className={styles.main}>
-      <h1>{categoryTitle}</h1>
+      <h1 className={styles.category}>{categoryTitle}</h1>
+      <BackButton />
       <div className={styles.productsContainer}>
-        {fetchedData.data.map((item, index) => (
+        {productList.map((item, index) => (
           <ImageAndDescription
             key={index}
             title={item.title}
             description={item.description}
-            imageProduct={item.imageSrc}
+            imageProduct={item.imageMain}
             price={100}
             forProductListPage={true}
-            params={{ category: categoryTitle }}
+            category={categoryTitle}
+            apiRoute={item.apiRoute}
           />
         ))}
       </div>

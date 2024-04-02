@@ -1,10 +1,7 @@
 import React from 'react'
 import styles from './FeaturesAndBox.module.sass'
 
-const FeaturesAndBox = ({
-  features,
-  includedItems,
-}: {
+interface TypeFeaturesAndBox {
   features: string
   includedItems: {
     box: {
@@ -12,7 +9,9 @@ const FeaturesAndBox = ({
       quantity: number
     }[]
   }
-}) => {
+}
+
+const FeaturesAndBox = ({ features, includedItems }: TypeFeaturesAndBox) => {
   return (
     <section className={styles.featuresAndBox}>
       <div className={styles.features}>

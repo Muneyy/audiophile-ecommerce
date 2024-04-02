@@ -1,27 +1,31 @@
 .header
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
     background-color: var(--background)
     color: #FFFFFF
-    padding: 10px 5vw
-    max-width: 1440px
     position: relative
-    margin: 0 auto
-    
+    padding: 20px 0
+    .wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        max-width: 1440px
+        margin: 0 auto
+        position: relative
+        @media screen and ( max-width: 1550px )
+            padding: 0 5%
+            
+        
 .logo
     font-size: 1.5rem
     font-weight: 1000
 
-@media screen and ( max-width: 767px )
+@media screen and ( max-width: 1200px )
     .desktopNavLinks
         display: none
-    
 
-@media screen and ( min-width: 768px )
+
+@media screen and ( min-width: 1200px )
     .header
-        padding: 20px 5%
         nav > ul 
             list-style: none
             display: flex
@@ -29,4 +33,21 @@
             gap: 20px
     .menuButton
         display: none
-        
+
+.cartButton
+    position: relative
+    > span
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: -7px
+        right: -7px
+        font-size: 0.7rem
+        font-weight: 700
+        width: 20px
+        height: 15px
+        background-color: var(--orange)
+        border-radius: 10px
+        color: white
+    

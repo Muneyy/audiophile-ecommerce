@@ -7,6 +7,23 @@
     flex-direction: column
     gap: 30px
     font-weight: 700
+    .header
+        display: flex
+        justify-content: space-between
+        button
+            padding: 0
+            background-color: transparent
+            height: auto
+            width: auto
+            margin-top: 0
+            letter-spacing: normal
+            color: black
+            font-size: 1rem
+            &:hover
+                transform: scale(1.03)
+    .emptyText
+        text-align: center
+        color: var(--gray-text)
     .divider
         display: flex
         flex-direction: column
@@ -32,8 +49,12 @@
         color: white
         border-radius: 5px
         padding: 20px 0
-        &:hover
+        &:hover:not(:disabled)
             filter: brightness(1.1)
+        &:disabled
+            background-color: var(--gray-bg)
+            color: var(--gray-text)
+            cursor: not-allowed
     @media screen and ( min-width: 1200px )
         margin-top: 0
         width: 400px

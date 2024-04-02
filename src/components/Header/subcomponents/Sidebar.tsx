@@ -3,11 +3,11 @@ import styles from './Sidebar.module.sass'
 import CloseIcon from '@/svgs/CloseIcon'
 import NavLinks from '../../NavLinks'
 
-const Sidebar = ({
-  setIsMenuOpen,
-}: {
+interface TypeSidebar {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
-}) => {
+}
+
+const Sidebar = ({ setIsMenuOpen }: TypeSidebar) => {
   const handleCloseClick = () => {
     setIsMenuOpen(false)
   }
@@ -31,7 +31,7 @@ const Sidebar = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [])
+  }, [setIsMenuOpen])
 
   return (
     <>
@@ -44,7 +44,7 @@ const Sidebar = ({
         >
           <CloseIcon />
         </button>
-        <NavLinks />
+        <NavLinks setIsMenuOpen={setIsMenuOpen} />
       </aside>
     </>
   )

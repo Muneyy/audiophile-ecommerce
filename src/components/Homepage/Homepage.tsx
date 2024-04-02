@@ -1,14 +1,17 @@
 import React from 'react'
-import bgBannerDesktop from '@/assets/image-hero.jpg'
-import bgBannerMobile from '@/assets/image-header.jpg'
-import bgFeaturedTwoDesktop from '@/assets/zx7-desktop.jpg'
-import bgFeaturedTwoMobile from '@/assets/zx7-mobile.jpg'
 import BannerSection from './subcomponents/BannerSection'
 import CategoriesSection from '../shared/CategoriesSection'
 import FeaturedSection from './subcomponents/FeaturedSection'
 import styles from './Homepage.module.sass'
+import fetchGql from '@/lib/fetchGql'
+import queryHomepage from '@/lib/graphqlQueries/queryHomepage'
+import { TypeHomepageContent } from '@/lib/types'
 
-const Homepage = () => {
+const Homepage = async () => {
+  const fetchedData: TypeHomepageContent = await fetchGql(queryHomepage)
+  const { bannerProductReference, promotionProducts } =
+    fetchedData.homepageContent
+
   const dynamicBackgroundImagesStyle = () => {
     // dynamically change url of background-image of hero banner
     // according to screen width
@@ -16,35 +19,27 @@ const Homepage = () => {
       <style scoped>
         {`
       .banner-background {
-        background-image: url(${bgBannerDesktop.src});
-      }
-      .featured-two-bg {
-        background-image: url(${bgFeaturedTwoDesktop.src});
+        background-image: url(${bannerProductReference.bannerUrlDesktop.url});
       }
       @media (max-width: 1200px) {
         .banner-background {
-          background-image: url(${bgBannerMobile.src});
-        }
-
-      }
-      @media (max-width: 768px) {
-        .featured-two-bg {
-          background-image: url(${bgFeaturedTwoMobile.src});
+          background-image: url(${bannerProductReference.bannerUrlMobile.url});
         }
       }
     `}
       </style>
     )
   }
+
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       {dynamicBackgroundImagesStyle()}
-      <BannerSection />
+      <BannerSection bannerContent={bannerProductReference} />
       <div className={styles.categoriesWidth}>
         <CategoriesSection />
       </div>
-      <FeaturedSection />
-    </main>
+      <FeaturedSection promotionProducts={promotionProducts.items} />
+    </div>
   )
 }
 

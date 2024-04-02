@@ -1,23 +1,36 @@
 .cartContainer
     position: absolute
-    border-radius: 10px
-    background-color: white
-    width: 350px
-    min-height: 400px
-    padding: 30px 40px
     display: flex
     flex-direction: column
+    justify-content: space-between
+    border-radius: 10px
+    background-color: white
+    width: 400px
+    min-height: 400px
+    padding: 30px 40px
     gap: 10px
-    right: 20px
-    top: 80%
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px
-    > span
+    right: 0
+    top: 170%
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    z-index: 2
+    .header
         font-size: 1.2rem
         font-weight: 700
         color: black
         padding-bottom: 10px
         margin-bottom: 20px
         border-bottom: 1px solid var(--gray-bg)
+        display: flex
+        justify-content: space-between
+        button
+            padding: 0
+            background-color: transparent
+            height: auto
+            width: auto
+            margin-top: 0
+            letter-spacing: normal
+            &:hover
+                transform: scale(1.03)
     button
         width: 100%
         font-weight: 550
@@ -39,8 +52,38 @@
     div
         span
             font-size: 0.9rem
-    @media screen and ( max-width: 769px )
+    p
+        font-weight: 700
+        font-size: 0.9rem
+        color: black
+        text-align: center
+    .bottomDivider
+        position: relative
+    .emptyParagraph
+        font-size: 1.1rem
+        position: absolute
+        width: 100%
+        text-align: center
+        bottom: 175px
+    .itemsContainer
+        display: flex
+        flex-direction: column
+        gap: 20px
+    .totalContainer
+        color: black
+        font-weight: 700
+        display: flex
+        text-transform: uppercase
+        justify-content: space-between
+        > .totalPrice
+            color: var(--gray-text)
+        > span
+            font-size: 1.3rem
+    @media screen and ( max-width: 1550px )
+        right: 5%
+    @media screen and ( max-width: 1201px )
         width: 90%
-        right: 0
-        margin: 0 5%
+        margin: 0 auto
+    @media screen and ( max-width: 768px  )
+        padding: 30px 20px
         

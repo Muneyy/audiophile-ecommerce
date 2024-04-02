@@ -1,10 +1,17 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './RedirectButton.module.sass'
-
 import { useRouter } from 'next/navigation'
 import RightArrow from '@/svgs/RightArrow'
+
+interface TypeRedirectButton {
+  link: string
+  text: string
+  ariaLabel: string
+  forCategory?: boolean
+  handleCartClick?: () => void
+}
 
 const RedirectButton = ({
   link,
@@ -12,18 +19,20 @@ const RedirectButton = ({
   ariaLabel,
   forCategory,
   handleCartClick,
-}: {
-  link: string
-  text: string
-  ariaLabel: string
-  forCategory?: boolean
-  handleCartClick?: () => void
-}) => {
+}: TypeRedirectButton) => {
   const router = useRouter()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   const handleClick = () => {
-    router.push(link)
-    if (handleCartClick) {
-      handleCartClick()
+    if (mounted && router) {
+      router.push(link)
+      if (handleCartClick) {
+        handleCartClick()
+      }
     }
   }
   return (

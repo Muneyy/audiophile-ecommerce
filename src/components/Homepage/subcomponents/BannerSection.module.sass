@@ -1,24 +1,29 @@
 .sectionBanner
     height: 500px
-    display: flex
-    flex-direction: column
-    gap: 20px
-    text-align: center
-    align-items: center
     padding-top: 80px
     background-repeat: no-repeat
     background-size: contain
     background-position: center 2px
     background-color: #191919
-    > span
+    .wrapper
+        display: flex
+        flex-direction: column
+        gap: 20px
+        text-align: center
+        align-items: center
+        @media screen and ( max-width: 1550px )
+            max-width: 1440px
+            margin: 0 auto
+            padding: 0 5%
+    span
         text-transform: uppercase
         letter-spacing: 0.2rem
         color: var(--gray)
-    > h1
+    h1
         font-size: 2.5rem
         text-transform: uppercase
         letter-spacing: 0.15rem
-    > p
+    p
         color: var(--gray)
         max-width: 350px
     button
@@ -26,17 +31,31 @@
         margin-top: 20px
         color: white
     @media screen and (min-width: 768px)
-        > h1
+        h1
             font-size: 3.2rem
     @media screen and ( min-width: 1200px )
         align-items: flex-start
         text-align: left
-        padding: 0 5%
         height: 700px
         padding-top: 120px
+        margin: 0 auto
         background-position: center
-        > h1
+        .wrapper
+            display: block
+            text-align: left
+        h1
             max-width: 500px
-        > p
-            font-size: 1.1rem
+            font-size: 4.2rem
+        p
+            font-size: 1.5rem
             max-width: 400px
+        
+@media screen and ( max-width: 1550px ) and ( min-width: 1200px )
+    .wrapper
+        padding-left: 5%
+            
+
+@media screen and ( min-width: 1550px )
+    .wrapper
+        max-width: 1440px
+        margin: 0 auto

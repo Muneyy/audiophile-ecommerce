@@ -2,6 +2,7 @@
     background-color: white
     padding: 50px 40px
     border-radius: 5px
+    flex-basis: 0
     > h1
         font-weight: 1000
     span
@@ -9,12 +10,27 @@
         font-weight: 700
         font-size: 0.9rem
         letter-spacing: 0.1rem
+    .emptyCartText
+        margin-top: 20px
+        font-weight: 700
+        color: var(--gray-text)
     form
         .formSection
             display: grid
             grid-template-columns: 1fr 1fr
             gap: 15px
             margin-top: 30px
+            p
+                font-size: 0.8rem
+                color: red
+            .paymentMethodSpan
+                color: black
+                font-size: 0.8rem
+                letter-spacing: normal
+            .labelAndError
+                display: flex
+                justify-content: space-between
+                align-items: center
             > span
                 grid-column: 1 / 3
             label
@@ -26,6 +42,7 @@
                 display: flex
                 flex-direction: column
                 gap: 5px
+
                 input 
                     padding: 12px 20px
                     border-radius: 5px
@@ -39,6 +56,13 @@
                 display: flex   
                 flex-direction: row
                 gap: 20px
+        .notice
+            display: flex
+            align-items: center
+            gap: 20px
+            .noticeText
+                color: var(--gray-text)
+                font-size: 0.9rem
         @media screen and ( max-width: 769px )
             .formSection
                 display: flex
